@@ -1,0 +1,40 @@
+.sectionTitle {
+    color: #762056;
+    border-bottom: 5px solid #f2672a; 
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.coins-graphic {
+    margin-top: 50px;
+}
+
+
+.coins {
+    width: 200px;
+}
+
+.coins-graphic1 {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    margin-right: 100px;
+}
+
+.coins-number{
+    display: block;
+    margin-left: 50%;
+    padding-top: 10px;
+    color: #762056;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+.coins-number-text{
+    display: block;
+    margin-left: 10%;
+    width: 170px;
+    font-family: "Montserrat", sans-serif;
+}

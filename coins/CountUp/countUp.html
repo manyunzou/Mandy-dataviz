@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+
+<title>CountUp Test</title>
+<script src="countUp.js"></script>
+
+<style>
+#number {
+    font-size: 40px;
+    background-color: red;
+    color: white;
+}
+
+</style>
+
+</head>
+
+<body>
+    <h1>The casualty is going up to <span id="number">0</span> people.</h1>
+
+    <script type="text/javascript">
+    var numAnim = new CountUp(document.getElementById("number"), 0, 201);
+    numAnim.start();
+    </script>
+    
+</body>
+
+
+</html>
