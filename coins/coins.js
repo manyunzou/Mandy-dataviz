@@ -1,6 +1,4 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
-
     // For count up animation 01
     var coinCount01 = new CountUp(document.getElementById("coins-count1"),0,75);
     coinCount01.start();
