@@ -4,3 +4,58 @@
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
 }
+
+.ms_tooltip {
+    font-size: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ms_image {
+    width: 50px;
+    margin-left: 30%;
+}
+
+#ms_container {
+    position: relative;
+}
+
+.overlay {
+    display:block;
+    width:240px;
+    height:240px;
+    text-align:center;
+    vertical-align: middle;
+    position: absolute;
+    top: 210px;  /* chartArea top  */
+    left: 180px; /* chartArea left */
+    font-size: 80px;
+    margin-top: 60px;
+}
+
+.overlay-label{
+    display:block;
+    width:240px;
+    height:240px;
+    text-align:center;
+    vertical-align: middle;
+    position: absolute;
+    top: 80px;  /* chartArea top  */
+    left: 180px; /* chartArea left */
+    margin-top: 140px;
+    font-size: 20px;
+}
+
+.ms_personal_total{
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: #f2672a;
+    font-family: "Montserrat", sans-serif;
+}
+
+.ms_label {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+}

@@ -22,14 +22,14 @@
         var data = new google.visualization.DataTable();
             data.addColumn('string','Name');
             data.addColumn('number','Cost');
-            data.addColumn({type: 'string', role: 'tooltip'});
+            data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
             data.addRows([
-            ["Housing", 689, 'Monthly Housing: $689'],
-            ["Food", 169, 'Monthly Food: $169'],
-            ["Transportation", 316, 'Monthly Transportation: $316'],
-            ["Healthcare", 170, 'Monthly Transportation: $170'],
-            ["Miscellaneous", 169, 'Miscellaneous: $169'],
-            ["Taxes", 343, 'Taxes: $343']
+            ["Housing", 689, '<img class="ms_image" src="icons/house.svg"/><br/><span class="ms_tooltip"><b>Monthly Housing</b>:</span> <br/><span class="ms_tooltip">$689</span>'],
+            ["Food", 169, '<span class="ms_tooltip"><b>Monthly Food</b>: </span> <br/><span class="ms_tooltip">$169</span>'],
+            ["Transportation", 316, '<span class="ms_tooltip"><b>Monthly Transportation</b>:</span> <br/><span class="ms_tooltip">$316</span>'],
+            ["Healthcare", 170, '<span class="ms_tooltip"><b>Monthly Transportation</b>: </span> <br/><span class="ms_tooltip">$170</span>'],
+            ["Miscellaneous", 169, '<span class="ms_tooltip"><b>Miscellaneous</b>: </span> <br/><span class="ms_tooltip">$169</span>'],
+            ["Taxes", 343, '<span class="ms_tooltip"><b>Taxes</b>: </span> <br/><span class="ms_tooltip">$343</span>']
             ]);
 
         // Set chart options
@@ -39,27 +39,16 @@
                        // title:'Monthly survival budget for a single person',
                        legend: 'none',
                        colors: ["#772057","#e1749e","#f2682a","#c9177d","#881c55","#f79b8b"],
-                       pieSliceText: 'none',
+                       pieSliceText: 'label',
+                       tooltip: {isHtml: true},
                     // Important to make a donut chart
                        pieHole: 0.6,
                 };
 
-        // For placing icons
-        function placeMarker(dataTable){
-            var cli = this.getChartLayoutInterface();
-            var chartArea = cli.getChartAreaBoundingBox();
-
-            document.querySelector('.house').style.top = Math.floor(cli.getYLocation(dataTable.getValue(5,1))) - 50 + "px";
-            document.querySelector('.house').style.left = Math.floor(cli.getXLocation(5)) - 10 + "px";
-        };
-
-
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('budget_person'));
-      google.visualization.events.addListener(chart, 'ready',
-        placeMarker.bind(chart, data));
-      chart.draw(data, options);
-      };
+        chart.draw(data, options);
+    };
 
     </script>
 
@@ -73,27 +62,15 @@
 <body>
     <h1><span class="sectionTitle">ALICE SURVIVAL BUDGET</span></h1>
 
-    <div class="house">
-    <img src="icons/house.svg" height="50">
+    <div id="ms_container">
+        <div id="budget_person"></div>
+        <div class="overlay-label">
+            <span class="ms_personal_total">$1,856</span>
+            <br/>
+            <span class="ms_label">MONTHLY "SURVIVAL" BUDGET</span>
+        </div>
+        <div id="person_icon" class="overlay"><img src="icons/ms_personal.png" style="width: 100px"></div>
     </div>
-
-<!--     <div class="childcare">
-    <img src="icons/childcare.svg" height="50">
-    </div>
-
-    <div class="food">
-    <img src="icons/food.svg" height="50">
-    </div>
-
-    <div class="healthcare">
-    <img src="icons/healthcare.svg" height="50">
-    </div>
-
-    <div class="transportation">
-    <img src="icons/transportation.svg" height="50">
-    </div> -->
-
-    <div id="budget_person"></div>
 
 </body>
 </html>
