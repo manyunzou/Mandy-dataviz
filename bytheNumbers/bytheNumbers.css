@@ -1,0 +1,78 @@
+body{
+    margin-left: 5%;
+}
+
+
+.sectionTitle {
+    color: #762056;
+    border-bottom: 5px solid #f2672a; 
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.numbers-people-chart{
+
+}
+
+
+.numbers-people-mark{
+    width: 40px;
+}
+
+.numbers-numbers-section{
+    width: 30%;
+}
+
+
+.numbers-numbers {
+    color: #762056;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.numbers-numbers2 {
+    color: #f2672a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.numbers-des {
+    color: #000000;
+    font-family: "roboto", sans-serif;
+    font-size: 20px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.numbers-food-insecurity{
+    width: 30%;
+    margin-top: 40px;
+}
+
+.numbers-food-insecurity img{
+    width: 300px;
+    margin-left: 8%;
+}
+
+.numbers-food-insecurity p {
+    font-size: 20px;
+    text-align: center;
+    font-family: "roboto", sans-serif;
+}
+
+.numbers-food-data{
+    color: #762056;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
