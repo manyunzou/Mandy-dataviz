@@ -36,6 +36,7 @@
         var options = {
                        width:600,
                        height:600,
+                       chartArea: {width: 500, height: 500},
                        // title:'Monthly survival budget for a single person',
                        legend: 'none',
                        colors: ["#772057","#e1749e","#f2682a","#c9177d","#881c55","#f79b8b"],
@@ -62,6 +63,22 @@
 <body>
     <h1><span class="sectionTitle">ALICE SURVIVAL BUDGET</span></h1>
 
+    <div class="section-content-container">
+        <h2 class="secondaryTitle">ALICE</h2>
+        <p class="section-content">
+        Created by the United Way, ALICE stands for—Asset Limited, Income Constrained, Employed. ALICE represents those in our communities who are working yet still struggling to make ends meet.
+        <br/>
+        <br/>
+        The ALICE Household Survival budget takes into consideration the bare minimum costs of basic necessities needed in Virginia. This budget does not allow for any savings and provides for a very modest living.
+        </p>
+    </div>
+    
+    <div class="section-content-container">
+        <h2 class="secondaryTitle">FEDERAL POVERTY LINE</h2>
+        <p class="section-content">Annually set to reflect the minimum income needed for food, clothing, transportation, shelter and other necessities. Federal poverty levels are used to determine the eligibility of an individual or family for certain federal assistance programs.
+        </p>
+    </div>
+
     <div id="ms_container">
         <div id="budget_person"></div>
         <div class="overlay-label">
@@ -69,7 +86,7 @@
             <br/>
             <span class="ms_label">MONTHLY "SURVIVAL" BUDGET</span>
         </div>
-        <div id="person_icon" class="overlay"><img src="icons/ms_personal.png" style="width: 100px"></div>
+        <div id="person_icon" class="overlay"><img src="icons/ms_personal.png" style="width: 130px"></div>
     </div>
 
 </body>
