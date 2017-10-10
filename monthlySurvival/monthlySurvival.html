@@ -13,6 +13,7 @@
 
       // Set a callback to run when the Google Visualization API is loaded.
       google.charts.setOnLoadCallback(drawChart);
+      google.charts.setOnLoadCallback(drawFamilyChart);
 
       // Callback that creates and populates a data table,
       // instantiates the pie chart, passes in the data and
@@ -37,7 +38,10 @@
                        width:600,
                        height:600,
                        chartArea: {width: 500, height: 500},
-                       // title:'Monthly survival budget for a single person',
+                       title:'Virginia Single Adult',
+                       titleTextStyle: {
+                        fontSize: 17,
+                       },
                        legend: 'none',
                        colors: ["#772057","#e1749e","#f2682a","#c9177d","#881c55","#f79b8b"],
                        pieSliceText: 'label',
@@ -50,6 +54,47 @@
         var chart = new google.visualization.PieChart(document.getElementById('budget_person'));
         chart.draw(data, options);
     };
+
+
+    function drawFamilyChart() {
+
+        var data = new google.visualization.DataTable();
+            data.addColumn('string','Name');
+            data.addColumn('number','Cost');
+            data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+            data.addRows([
+            ["Housing", 897, '<img class="ms_image" src="icons/house.svg"/><br/><span class="ms_tooltip"><b>Monthly Housing</b>:</span> <br/><span class="ms_tooltip">$897</span>'],
+            ["Food", 561, '<span class="ms_tooltip"><b>Monthly Food</b>: </span> <br/><span class="ms_tooltip">$561</span>'],
+            ["Transportation", 630, '<span class="ms_tooltip"><b>Monthly Transportation</b>:</span> <br/><span class="ms_tooltip">$630</span>'],
+            ["Healthcare", 653, '<span class="ms_tooltip"><b>Monthly Transportation</b>: </span> <br/><span class="ms_tooltip">$653</span>'],
+            ["Miscellaneous", 463, '<span class="ms_tooltip"><b>Miscellaneous</b>: </span> <br/><span class="ms_tooltip">$463</span>'],
+            ["Taxes", 681, '<span class="ms_tooltip"><b>Taxes</b>: </span> <br/><span class="ms_tooltip">$681</span>'],
+            ["Childcare", 1204, '<span class="ms_tooltip"><b>Child Care</b>: </span> <br/><span class="ms_tooltip">$1204</span>']
+            ]);
+
+        // Set chart options
+        var options = {
+                       width:600,
+                       height:600,
+                       chartArea: {width: 500, height: 500},
+                       title:'Virginia Family',
+                       titleTextStyle: {
+                        fontSize: 17,
+                       },
+                       legend: 'none',
+                       colors: ["#772057","#e1749e","#f2682a","#c9177d","#881c55","#f79b8b"],
+                       pieSliceText: 'label',
+                       tooltip: {isHtml: true},
+                    // Important to make a donut chart
+                       pieHole: 0.6,
+                };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('budget_family'));
+        chart.draw(data, options);
+    };
+
+
 
     </script>
 
@@ -87,6 +132,15 @@
             <span class="ms_label">MONTHLY "SURVIVAL" BUDGET</span>
         </div>
         <div id="person_icon" class="overlay"><img src="icons/ms_personal.png" style="width: 130px"></div>
+    </div>
+    <div id="ms_container">
+        <div id="budget_family"></div>
+        <div class="overlay-label">
+            <span class="ms_personal_total">$5089</span>
+            <br/>
+            <span class="ms_label">MONTHLY "SURVIVAL" BUDGET</span>
+        </div>
+        <div id="person_icon" class="overlay"><img src="icons/ms_family.png" style="width: 200px"></div>
     </div>
 
 </body>

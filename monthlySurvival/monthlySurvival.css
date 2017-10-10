@@ -25,6 +25,8 @@ body{
 
 #ms_container {
     position: relative;
+    float: left;
+    width: 50%;
 }
 
 .secondaryTitle{
