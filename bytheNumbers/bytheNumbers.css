@@ -11,7 +11,7 @@ body{
 }
 
 .numbers-people-chart{
-
+    visibility: hidden;
 }
 
 
@@ -20,6 +20,10 @@ body{
 }
 
 .numbers-numbers-section{
+    width: 30%;
+}
+
+.numbers-numbers-section2{
     width: 30%;
 }
 
@@ -55,6 +59,7 @@ body{
 .numbers-food-insecurity{
     width: 30%;
     margin-top: 40px;
+    visibility: hidden;
 }
 
 .numbers-food-insecurity img{
