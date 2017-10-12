@@ -10,8 +10,14 @@ body{
     text-transform: uppercase;
 }
 
+.numbers-left {
+    width: 50%;
+    float: left;
+}
+
 .numbers-people-chart{
     visibility: hidden;
+    vertical-align: center;
 }
 
 
@@ -20,11 +26,11 @@ body{
 }
 
 .numbers-numbers-section{
-    width: 30%;
+    width: 70%;
 }
 
 .numbers-numbers-section2{
-    width: 30%;
+    width: 70%;
 }
 
 
@@ -58,8 +64,8 @@ body{
 
 .numbers-food-insecurity{
     width: 30%;
-    margin-top: 40px;
     visibility: hidden;
+    float: left;
 }
 
 .numbers-food-insecurity img{

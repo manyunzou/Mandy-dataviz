@@ -36,7 +36,7 @@ $( document ).ready(function() {
     };
 
     $(".numbers-food-insecurity").addClass(function(){
-        setTimeout(addPop, 5000);
+        setTimeout(addPop, 3000);
     });
 
 });
