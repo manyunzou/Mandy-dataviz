@@ -1,0 +1,131 @@
+/* General Page Setting */
+
+body{
+    margin-left: 5%;
+}
+
+
+.sectionTitle {
+    color: #762056;
+    border-bottom: 5px solid #f2672a; 
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.secondaryTitle{
+    font-size: 25px;
+    margin-bottom: 0px;
+    color: #f2672a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.section-content {
+    width: 50%;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #762056;
+  font-weight: bold;
+  border-bottom: 3px solid #762056;
+}
+
+/* Learn More page setting */
+
+.lm-resources{
+  margin-top: 30px;
+}
+
+.lm-graphic{
+  width: 80px;
+}
+
+.lm-title{
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #f2672a;
+  margin-top: 0;
+}
+
+.lm-text {
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.lm-assistance{
+  clear:both;
+}
+
+.lm-assistance-left{
+  width: 15%;
+  text-align: center;
+  float: left;
+}
+
+.lm-assistance-right{
+  width: 50%;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  float: left;
+}
+
+.lm-donate {
+  margin-top: 100px;
+  clear: left;
+}
+
+.lm-donate-left{
+  width: 15%;
+  text-align: center;
+  float: left;
+}
+
+.lm-donate-right{
+  width: 50%;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  float: left;
+}
+
+.lm-volunteer {
+  margin-top: 40px;
+  clear: left;
+}
+
+
+.lm-volunteer-left{
+  width: 15%;
+  text-align: center;
+  float: left;
+}
+
+.lm-volunteer-right{
+  width: 50%;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  float: left;
+}
+
+.lm-onCampus {
+  margin-top: 40px;
+  clear: left;
+}
+
+
+.lm-onCampus-left{
+  width: 15%;
+  text-align: center;
+  float: left;
+}
+
+.lm-onCampus-right{
+  width: 50%;
+  margin-left: 50px;
+  float: left;
+}
+
+
+
