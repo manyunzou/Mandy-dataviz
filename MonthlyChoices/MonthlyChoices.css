@@ -1,0 +1,83 @@
+/* General Page Setting */
+
+body{
+    margin-left: 5%;
+}
+
+
+.sectionTitle {
+    color: #762056;
+    border-bottom: 5px solid #f2672a; 
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.secondaryTitle{
+    font-size: 25px;
+    margin-bottom: 0px;
+    color: #f2672a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.section-content {
+    width: 50%;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Monthly Choices page setting */
+
+.mc-graphics-section{
+  margin-top: 40px;
+}
+
+.mc-graphics {
+  width: 150px;
+  margin-left: 15px;
+}
+
+.mc-graphics-text{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.mc-graphics-highlight{
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.mc-food{
+  width: 15%;
+  float: left;
+}
+
+.mc-equal{
+  width: 5%;
+  margin-left: 60px;
+  float: left;
+}
+
+.mc-equal-mark{
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+}
+
+.mc-books{
+  width: 15%;
+  margin-left: 70px;
+  float: left;
+}
+
+.mc-transportation{
+  width: 15%;
+  margin-left: 70px;
+  float: left;
+}
+
+.mc-hands{
+  width: 15%;
+  margin-left: 70px;
+  float: left;
+}
