@@ -35,6 +35,7 @@ body{
 .mc-graphics {
   width: 150px;
   margin-left: 15px;
+  visibility: hidden;
 }
 
 .mc-graphics-text{
