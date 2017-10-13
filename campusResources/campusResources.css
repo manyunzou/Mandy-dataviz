@@ -33,10 +33,20 @@ a {
   border-bottom: 3px solid #762056;
 }
 
+.textHighlight{
+  color: #f2672a;
+  font-weight: bold;
+}
+
+#dottedLine {
+  width: 80%;
+}
+
 /* Learn More page setting */
 
 .lm-resources{
-  margin-top: 30px;
+  margin-top: 50px;
+
 }
 
 .lm-graphic{
@@ -73,7 +83,7 @@ a {
 }
 
 .lm-donate {
-  margin-top: 100px;
+  margin-top: 40px;
   clear: left;
 }
 
