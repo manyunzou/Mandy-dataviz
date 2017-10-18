@@ -34,7 +34,9 @@
     </div>
 
 
-        <div id="budget_person"></div>
+        <div id="budget_person">
+            <h2 class="ms-chartTitle">Virginia Single Adult</h2>
+        </div>
         <script>
         var width = 960,
             height = 500,
@@ -57,6 +59,7 @@
         var svg = d3.select("#budget_person").append("svg")
                     .attr("width", width)
                     .attr("height", height)
+                    .attr("id","chart_person")
                     .append("g")
                     .attr("transform","translate(" + width/2 + "," + height/2 + ")");
 
@@ -86,7 +89,60 @@
         </script>
 
 
-        <div id="budget_family"></div>
+        <div id="budget_family">
+            <h2 class="ms-chartTitle">Virginia Single Adult</h2>
+        </div>
+
+         <script>
+        var fwidth = 960,
+            fheight = 500,
+            fradius = Math.min(fwidth, fheight) / 2;
+
+            var fimage_width = 40,
+                fimage_height = 40;
+
+        var fcolor = d3.scaleOrdinal()
+                    .range(["#772057","#e1749e","#f2682a","#c9177d","#881c55","#f79b8b","#772057"]);
+
+        var farc = d3.arc()
+                .outerRadius(radius - 10)
+                .innerRadius(radius- 110);
+
+        var fpie = d3.pie()
+                    .sort(null)
+                    .value(function(d){return d.Money; });
+
+        var fsvg = d3.select("#budget_family").append("svg")
+                    .attr("width", fwidth)
+                    .attr("height", fheight)
+                    .attr("id","chart_family")
+                    .append("g")
+                    .attr("transform","translate(" + fwidth/2 + "," + fheight/2 + ")");
+
+        d3.csv("familyData.csv", function(error,fdata){
+            if (error) throw error;
+
+            var fg = fsvg.selectAll(".arc")
+                .data(fpie(fdata))
+                .enter().append("g")
+                .attr("class","fArc");
+
+            fg.append("path")
+                .attr("d", farc)
+                .style("fill", function(d){return color(d.data.Name); });
+
+            fg.append("g")
+                .attr("transform", function(d){return "translate(" + arc.centroid(d) + ")"; })
+                .append("svg:image")
+                    .attr("xlink:href", function(d){return d.data.Image; })
+                    .attr("width", fimage_width)
+                    .attr("height", fimage_height)
+                    .attr("x", -1*fimage_width/2)
+                    .attr("y", -1*fimage_height/2);
+
+        });
+
+        </script>
         
 </body>
 </html>

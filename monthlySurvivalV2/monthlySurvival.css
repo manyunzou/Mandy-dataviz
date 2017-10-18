@@ -23,3 +23,13 @@ body{
     font-size: 15px;
     font-family: "Roboto", sans-serif;
 }
+
+
+.ms-chartTitle{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+path {
+ stroke: #fff;
+}
