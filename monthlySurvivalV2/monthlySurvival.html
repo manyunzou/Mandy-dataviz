@@ -75,13 +75,14 @@
             g.append("g")
                 .attr("transform", function(d){return "translate(" + arc.centroid(d) + ")"; })
                 .append("svg:image")
-                    .attr("xlink:href", function(d){return d.data.image; })
+                    .attr("xlink:href", function(d){return d.data.Image; })
                     .attr("width", image_width)
                     .attr("height", image_height)
                     .attr("x", -1*image_width/2)
                     .attr("y", -1*image_height/2);
 
         });
+
         </script>
 
 

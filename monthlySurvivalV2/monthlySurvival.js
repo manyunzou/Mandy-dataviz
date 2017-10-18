@@ -34,5 +34,3 @@ d3.csv("personalData.csv", function(error,data){
         .attr("d", arc)
         .style("fill", function(d){return color(d.data.age); });
 
-    
-})
