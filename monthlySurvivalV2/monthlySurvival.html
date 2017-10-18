@@ -38,7 +38,7 @@
             <h2 class="ms-chartTitle">Virginia Single Adult</h2>
         </div>
         <script>
-        var width = 960,
+        var width = 550,
             height = 500,
             radius = Math.min(width, height) / 2;
 
@@ -84,6 +84,15 @@
                     .attr("x", -1*image_width/2)
                     .attr("y", -1*image_height/2);
 
+            g.append("svg:image")
+                .attr("x", -75)
+                .attr("y", -30)
+                .attr("width", 150)
+                .attr("height", 150)
+                .attr("xlink:href","icons/ms_personal.png");
+
+            g.append("")
+
         });
 
         </script>
@@ -94,7 +103,7 @@
         </div>
 
          <script>
-        var fwidth = 960,
+        var fwidth = 550,
             fheight = 500,
             fradius = Math.min(fwidth, fheight) / 2;
 
@@ -139,6 +148,13 @@
                     .attr("height", fimage_height)
                     .attr("x", -1*fimage_width/2)
                     .attr("y", -1*fimage_height/2);
+
+            fg.append("svg:image")
+                .attr("x", -95)
+                .attr("y", -50)
+                .attr("width", 190)
+                .attr("height", 190)
+                .attr("xlink:href","icons/ms_family.png");
 
         });
 
