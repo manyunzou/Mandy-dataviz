@@ -69,7 +69,7 @@
             var g = svg.selectAll(".arc")
                 .data(pie(data))
                 .enter().append("g")
-                .attr("class","pArc");
+                .attr("class", function(d){return "p" + d.data.Name; });
 
             g.append("path")
                 .attr("d", arc)
@@ -145,7 +145,7 @@
             var fg = fsvg.selectAll(".arc")
                 .data(fpie(fdata))
                 .enter().append("g")
-                .attr("class","fArc");
+                .attr("class", function(d){return "f" + d.data.Name; });
 
             fg.append("path")
                 .attr("d", farc)
