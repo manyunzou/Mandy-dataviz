@@ -23,14 +23,15 @@
         var data = new google.visualization.DataTable();
             data.addColumn('string','Name');
             data.addColumn('number','Cost');
+            data.addColumn('string','image')
             data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
             data.addRows([
-            ["Housing", 689, '<img class="ms_image" src="icons/house.svg"/><br/><span class="ms_tooltip"><b>Monthly Housing</b>:</span> <br/><span class="ms_tooltip">$689</span>'],
-            ["Food", 169, '<span class="ms_tooltip"><b>Monthly Food</b>: </span> <br/><span class="ms_tooltip">$169</span>'],
-            ["Transportation", 316, '<span class="ms_tooltip"><b>Monthly Transportation</b>:</span> <br/><span class="ms_tooltip">$316</span>'],
-            ["Healthcare", 170, '<span class="ms_tooltip"><b>Monthly Transportation</b>: </span> <br/><span class="ms_tooltip">$170</span>'],
-            ["Miscellaneous", 169, '<span class="ms_tooltip"><b>Miscellaneous</b>: </span> <br/><span class="ms_tooltip">$169</span>'],
-            ["Taxes", 343, '<span class="ms_tooltip"><b>Taxes</b>: </span> <br/><span class="ms_tooltip">$343</span>']
+            ["Housing", 689, '<img class="ms_image" src="icons/house.svg"/>', '<span class="ms_tooltip"><b>Monthly Housing</b>:</span> <br/><span class="ms_tooltip">$689</span>'],
+            ["Food", 169, '<img class="ms_image" src="icons/house.svg"/>', '<span class="ms_tooltip"><b>Monthly Food</b>: </span> <br/><span class="ms_tooltip">$169</span>'],
+            ["Transportation", 316, '<img class="ms_image" src="icons/house.svg"/>', '<span class="ms_tooltip"><b>Monthly Transportation</b>:</span> <br/><span class="ms_tooltip">$316</span>'],
+            ["Healthcare", 170, '<img class="ms_image" src="icons/house.svg"/>', '<span class="ms_tooltip"><b>Monthly Transportation</b>: </span> <br/><span class="ms_tooltip">$170</span>'],
+            ["Miscellaneous", 169, '<img class="ms_image" src="icons/house.svg"/>', '<span class="ms_tooltip"><b>Miscellaneous</b>: </span> <br/><span class="ms_tooltip">$169</span>'],
+            ["Taxes", 343, '<img class="ms_image" src="icons/house.svg"/>', '<span class="ms_tooltip"><b>Taxes</b>: </span> <br/><span class="ms_tooltip">$343</span>']
             ]);
 
         // Set chart options
@@ -44,7 +45,7 @@
                        },
                        legend: 'none',
                        colors: ["#772057","#e1749e","#f2682a","#c9177d","#881c55","#f79b8b"],
-                       pieSliceText: 'label',
+                       pieSliceText: 'value',
                        tooltip: {isHtml: true},
                     // Important to make a donut chart
                        pieHole: 0.6,
@@ -83,7 +84,7 @@
                        },
                        legend: 'none',
                        colors: ["#772057","#e1749e","#f2682a","#c9177d","#881c55","#f79b8b"],
-                       pieSliceText: 'label',
+                       pieSliceText: 'image',
                        tooltip: {isHtml: true},
                     // Important to make a donut chart
                        pieHole: 0.6,
@@ -93,8 +94,6 @@
         var chart = new google.visualization.PieChart(document.getElementById('budget_family'));
         chart.draw(data, options);
     };
-
-
 
     </script>
 

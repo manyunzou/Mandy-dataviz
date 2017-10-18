@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ALICE Survival Budget</title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="animations.css">
+    <link rel="stylesheet" type="text/css" href="monthlySurvival.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto|Roboto+Condensed|Rubik" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1><span class="sectionTitle">ALICE SURVIVAL BUDGET</span></h1>
+
+    <div class="section-content-container">
+        <h2 class="secondaryTitle">ALICE</h2>
+        <p class="section-content">
+        Created by the United Way, ALICE stands for-Asset Limited, Income Constrained, Employed. ALICE represents those in our communities who are working yet still struggling to make ends meet.
+        <br/>
+        <br/>
+        The ALICE Household Survival budget takes into consideration the bare minimum costs of basic necessities needed in Virginia. This budget does not allow for any savings and provides for a very modest living.
+        </p>
+    </div>
+    
+    <div class="section-content-container">
+        <h2 class="secondaryTitle">FEDERAL POVERTY LINE</h2>
+        <p class="section-content">Annually set to reflect the minimum income needed for food, clothing, transportation, shelter and other necessities. Federal poverty levels are used to determine the eligibility of an individual or family for certain federal assistance programs.
+        </p>
+    </div>
+
+
+        <div id="budget_person"></div>
+        <script>
+        var width = 960,
+            height = 500,
+            radius = Math.min(width, height) / 2;
+
+            var image_width = 40,
+                image_height = 40;
+
+        var color = d3.scaleOrdinal()
+                    .range(["#772057","#e1749e","#f2682a","#c9177d","#881c55","#f79b8b"]);
+
+        var arc = d3.arc()
+                .outerRadius(radius - 10)
+                .innerRadius(radius- 110);
+
+        var pie = d3.pie()
+                    .sort(null)
+                    .value(function(d){return d.Money; });
+
+        var svg = d3.select("#budget_person").append("svg")
+                    .attr("width", width)
+                    .attr("height", height)
+                    .append("g")
+                    .attr("transform","translate(" + width/2 + "," + height/2 + ")");
+
+        d3.csv("personalData.csv", function(error,data){
+            if (error) throw error;
+
+            var g = svg.selectAll(".arc")
+                .data(pie(data))
+                .enter().append("g")
+                .attr("class","pArc");
+
+            g.append("path")
+                .attr("d", arc)
+                .style("fill", function(d){return color(d.data.Name); });
+
+            g.append("g")
+                .attr("transform", function(d){return "translate(" + arc.centroid(d) + ")"; })
+                .append("svg:image")
+                    .attr("xlink:href", function(d){return d.data.image; })
+                    .attr("width", image_width)
+                    .attr("height", image_height)
+                    .attr("x", -1*image_width/2)
+                    .attr("y", -1*image_height/2);
+
+        });
+        </script>
+
+
+        <div id="budget_family"></div>
+        
+</body>
+</html>

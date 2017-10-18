@@ -1,0 +1,25 @@
+body{
+    margin-left: 5%;
+}
+
+
+.sectionTitle {
+    color: #762056;
+    border-bottom: 5px solid #f2672a; 
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.secondaryTitle{
+    font-size: 25px;
+    margin-bottom: 0px;
+    color: #f2672a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.section-content {
+    width: 50%;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
