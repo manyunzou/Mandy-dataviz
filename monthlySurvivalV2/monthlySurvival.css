@@ -36,6 +36,10 @@ path {
  stroke: #fff;
 }
 
+.budget-person-container{
+    clear: both;
+}
+
 #budget_person{
     width: 50%;
     float: left;
@@ -50,5 +54,16 @@ path {
     font-family: "Roboto", sans-serif;
     color: #f2672a;
 }
+
+#budget_family{
+    width: 50%;
+    float: left;
+}
+
+#budget-family-numbers{
+    width: 50%;
+    float: left;
+}
+
 
 
