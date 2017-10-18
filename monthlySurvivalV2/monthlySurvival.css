@@ -46,8 +46,10 @@ path {
 }
 
 #budget-person-numbers{
-    width: 50%;
+    width: 30%;
     float: left;
+    margin-top: 100px;
+    margin-left: 100px;
 }
 
 #budget-person-numbers p{
@@ -70,8 +72,10 @@ path {
 }
 
 #budget-family-numbers{
-    width: 50%;
+    width: 30%;
     float: left;
+    margin-top: 100px;
+    margin-left: 100px;
 }
 
 #budget-family-numbers p{
