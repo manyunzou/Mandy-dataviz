@@ -66,6 +66,7 @@ path {
 #budget_family{
     width: 50%;
     float: left;
+    clear: left;
 }
 
 #budget-family-numbers{
