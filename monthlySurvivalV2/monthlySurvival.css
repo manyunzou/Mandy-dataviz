@@ -50,9 +50,17 @@ path {
     float: left;
 }
 
+#budget-person-numbers p{
+    font-family: "Roboto", sans-serif;
+}
+
 .budget-person-numbers-title{
     font-family: "Roboto", sans-serif;
     color: #f2672a;
+}
+
+#budget-family-container{
+    clear: left;
 }
 
 #budget_family{
@@ -63,6 +71,10 @@ path {
 #budget-family-numbers{
     width: 50%;
     float: left;
+}
+
+#budget-family-numbers p{
+    font-family: "Roboto", sans-serif;
 }
 
 
