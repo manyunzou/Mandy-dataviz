@@ -61,7 +61,7 @@
                     .attr("height", height)
                     .attr("id","chart_person")
                     .append("g")
-                    .attr("transform","translate(" + width/2 + "," + height/2 + ")");
+                    .attr("transform","translate(300,250)");
 
         d3.csv("personalData.csv", function(error,data){
             if (error) throw error;
@@ -117,7 +117,7 @@
                     .attr("height", fheight)
                     .attr("id","chart_family")
                     .append("g")
-                    .attr("transform","translate(" + fwidth/2 + "," + fheight/2 + ")");
+                    .attr("transform","translate(300,250)");
 
         d3.csv("familyData.csv", function(error,fdata){
             if (error) throw error;
