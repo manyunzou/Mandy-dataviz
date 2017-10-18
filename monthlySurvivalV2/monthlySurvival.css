@@ -24,6 +24,8 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
+/* Monthly Survival Page CSS*/
+
 
 .ms-chartTitle{
     font-family: "Montserrat", sans-serif;
@@ -33,3 +35,20 @@ body{
 path {
  stroke: #fff;
 }
+
+#budget_person{
+    width: 50%;
+    float: left;
+}
+
+#budget-person-numbers{
+    width: 50%;
+    float: left;
+}
+
+.budget-person-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+
