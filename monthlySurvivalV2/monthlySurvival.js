@@ -7,16 +7,19 @@ $(document).ready(function(){
             "color":"#fff",
             "background-color":"#762056"
         });
-        $(".budget-person-numbers-title").css({
+        $(".pHousing-budget-person-numbers-title").css({
             "color": "#fff"
         })
     });
 
     $(".pHousing").mouseout(function(){
         $(".pHousing-text").css({
-            "color":"#f2672a",
+            "color":"#000000",
             "background-color":"#fff"
         });
+        $(".pHousing-budget-person-numbers-title").css({
+            "color": "#f2672a"
+        })
     });
 
     $(".pFood").mouseover(function(){
@@ -24,16 +27,19 @@ $(document).ready(function(){
             "color":"#fff",
             "background-color":"#762056"
         });
-        $(".budget-person-numbers-title").css({
+        $(".pFood-budget-person-numbers-title").css({
             "color": "#fff"
         })
     });
 
     $(".pFood").mouseout(function(){
         $(".pFood-text").css({
-            "color":"#f2672a",
+            "color":"#000000",
             "background-color":"#fff"
         });
+        $(".pFood-budget-person-numbers-title").css({
+            "color": "#f2672a"
+        })
     });
 
 });
