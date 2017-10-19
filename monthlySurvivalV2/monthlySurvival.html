@@ -8,7 +8,10 @@
     <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
     <script type="text/javascript" src="monthlySurvival.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="animations.css">
+    <!-- For detect pages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="animate.css">
     <link rel="stylesheet" type="text/css" href="monthlySurvival.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto|Roboto+Condensed|Rubik" rel="stylesheet">
@@ -113,7 +116,7 @@
 
         });
 
-
+        $("#chart_person").addClass("animated rotateIn");
 
         </script>
 
@@ -206,8 +209,9 @@
             .attr("class","ms-number-description")
             .text('MONTHLY "SURVIVAL" BUDGET');
 
-
         });
+
+        // $("#chart_family").addClass("animated rotateIn");
 
         </script>
 

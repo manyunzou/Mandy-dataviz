@@ -2,6 +2,17 @@
 
 $(document).ready(function(){
 
+$("#budget-person-numbers").addClass("animated fadeInLeft");
+
+$("#budget-family-numbers").addClass("animated fadeInLeft");
+
+var waypoint = new Waypoint({
+    element: document.getElementById("chart_family"),
+    handler: function(){
+        $("#chart_family").addClass("animated rotateIn")
+    }
+});
+
 //p-Housing hover over
     $(".pHousing").mouseover(function(){
         $(".pHousing-text").css({
