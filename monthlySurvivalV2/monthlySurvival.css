@@ -37,6 +37,11 @@ path {
  stroke: #fff;
 }
 
+.buget-bar{
+    width: 500px;
+    margin-top: 50px;
+}
+
 /* Person numbers container */
 .budget-person-container{
     clear: both;
