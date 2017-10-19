@@ -37,19 +37,6 @@ path {
  stroke: #fff;
 }
 
-.ms-number-title{
-    font-size: 50px;
-    color: #f2672a;
-    font-family: "Montserrat",sans-serif;
-    font-weight: bold;
-}
-
-.ms-number-description{
-    font-size: 20px;
-    font-family: "Montserrat",sans-serif;
-    font-weight: bold;
-}
-
 /* Person numbers container */
 .budget-person-container{
     clear: both;
