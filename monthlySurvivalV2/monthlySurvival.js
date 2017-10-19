@@ -215,7 +215,7 @@ $(document).ready(function(){
     });
 
 // Family Miscellaneous
-    $(".fMisc").mouseover(function(){
+    $(".fMiscellaneous").mouseover(function(){
         $(".fMisc-text").css({
             "color":"#fff",
             "background-color":"#762056"
@@ -225,7 +225,7 @@ $(document).ready(function(){
         })
     });
 
-    $(".fMisc").mouseout(function(){
+    $(".fMiscellaneous").mouseout(function(){
         $(".fMisc-text").css({
             "color":"#000000",
             "background-color":"#fff"
