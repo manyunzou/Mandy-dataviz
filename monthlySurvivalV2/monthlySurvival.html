@@ -92,9 +92,21 @@
                 .attr("height", 150)
                 .attr("xlink:href","icons/ms_personal.png");
 
-            g.append("")
+            g.append("text")
+            .attr("x", -25)
+            .attr("y", -100)
+            .attr("class","ms-number-title")
+            .text("$1,856");
+
+            g.append("text")
+            .attr("x", -125)
+            .attr("y", -30)
+            .attr("class","ms-number-description")
+            .text('MONTHLY "SURVIVAL" BUDGET');
 
         });
+
+
 
         </script>
 
