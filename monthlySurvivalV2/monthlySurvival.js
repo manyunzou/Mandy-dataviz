@@ -7,12 +7,15 @@ $(document).ready(function(){
             "color":"#fff",
             "background-color":"#762056"
         });
+        $(".budget-person-numbers-title").css({
+            "color": "#fff";
+        })
     });
 
     $(".pHousing").mouseout(function(){
         $(".pHousing-text").css({
             "color":"#f2672a",
-            "background-color":"none"
+            "background-color":"#fff"
         });
     });
 
