@@ -8,7 +8,7 @@ $(document).ready(function(){
             "background-color":"#762056"
         });
         $(".budget-person-numbers-title").css({
-            "color": "#fff";
+            "color": "#fff"
         })
     });
 
@@ -25,7 +25,7 @@ $(document).ready(function(){
             "background-color":"#762056"
         });
         $(".budget-person-numbers-title").css({
-            "color": "#fff";
+            "color": "#fff"
         })
     });
 
