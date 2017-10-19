@@ -27,6 +27,7 @@ body{
 /* Monthly Survival Page CSS*/
 
 
+/* Donut chart */
 .ms-chartTitle{
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
@@ -36,6 +37,7 @@ path {
  stroke: #fff;
 }
 
+/* Person numbers container */
 .budget-person-container{
     clear: both;
 }
@@ -52,14 +54,43 @@ path {
     margin-left: 100px;
 }
 
+/* Style person numbers */
+
 #budget-person-numbers p{
     font-family: "Roboto", sans-serif;
 }
 
-.budget-person-numbers-title{
+.pHousing-budget-person-numbers-title{
     font-family: "Roboto", sans-serif;
     color: #f2672a;
 }
+
+.pHealth-budget-person-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.pFood-budget-person-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.pMisc-budget-person-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.pTrans-budget-person-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.pTaxes-budget-person-numbers-title {
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+/* Family number container */
 
 #budget-family-container{
     clear: left;
@@ -82,5 +113,36 @@ path {
     font-family: "Roboto", sans-serif;
 }
 
+/* Style family numbers */
+
+.fHousing-budget-family-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.fHealthcare-budget-family-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.fFood-budget-family-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.fMisc-budget-family-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.fTrans-budget-family-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.fTaxes-budget-family-numbers-title {
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
 
 
