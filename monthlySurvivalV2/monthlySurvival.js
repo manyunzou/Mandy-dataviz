@@ -19,4 +19,21 @@ $(document).ready(function(){
         });
     });
 
+    $(".pFood").mouseover(function(){
+        $(".pFood-text").css({
+            "color":"#fff",
+            "background-color":"#762056"
+        });
+        $(".budget-person-numbers-title").css({
+            "color": "#fff";
+        })
+    });
+
+    $(".pFood").mouseout(function(){
+        $(".pFood-text").css({
+            "color":"#f2672a",
+            "background-color":"#fff"
+        });
+    });
+
 });
