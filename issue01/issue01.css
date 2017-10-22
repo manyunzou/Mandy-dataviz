@@ -1,0 +1,67 @@
+body{
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+
+/* Top Menu Area */
+.spotlight-logo {
+    width: 300px;
+}
+
+.collegeLine {
+    margin-top: 60px;
+    left: -110px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+.issueMenu {
+    left: -150px;
+    top: 55px;
+    font-family: "Montserrat Bold", sans-serif;
+    font-weight: bold;
+}
+
+.topIssue {
+    font-size: 20px;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+
+/* Pattern & Headline area */
+.patternArea {
+    margin-top: 30px;
+    margin-left: 1px;
+}
+
+.issuePattern {
+    z-index: 2;
+}
+
+.issueName {
+    width: 1230px;
+    height: 420px;
+    z-index: 1;
+    position: relative;
+    color: white;
+    background-image: url("img/Spotlight_pattern.png");
+}
+
+.issueName-headline {
+    font-family: "Rubik", sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 22%;
+    font-size: 80px;
+    line-height: 80px;
+    margin-top: 120px;
+    text-transform: uppercase;
+}
+
+.issueName-volume {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 22%;
+}
