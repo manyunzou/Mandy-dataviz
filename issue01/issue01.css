@@ -1,6 +1,12 @@
+/* For all page */
+
 body{
     margin-left: 3%;
     margin-top: 1%;
+}
+
+a:hover{
+
 }
 
 
@@ -17,7 +23,7 @@ body{
 }
 
 .issueMenu {
-    left: -150px;
+    left: -90px;
     top: 55px;
     font-family: "Montserrat Bold", sans-serif;
     font-weight: bold;
@@ -25,18 +31,32 @@ body{
 
 .topIssue {
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 40px;
+    margin-right: 60px;
     text-transform: uppercase;
+    cursor: pointer;
 }
+
+.topIssue:hover {
+    color: #762056;
+}
+
+.topIssue2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.topIssue2:hover {
+    color: #762056;
+}
+
+
 
 /* Pattern & Headline area */
 .patternArea {
     margin-top: 30px;
     margin-left: 1px;
-}
-
-.issuePattern {
-    z-index: 2;
 }
 
 .issueName {
@@ -64,4 +84,52 @@ body{
     font-weight: bolder;
     font-size: 20px;
     margin-left: 22%;
+}
+
+/* Brief Area */
+.briefArea {
+    margin-top: 20px;
+    margin-left: 1px;
+}
+
+.briefMenu {
+    font-family: "Rubik", sans-serif;
+    background-image: url("img/topBrief.png");
+    width: 1230px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.menuOverview {
+    margin-left: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.menuOverview:hover{
+    color: #762056;
+}
+
+.menuFeature:hover{
+    color: #762056;
+}
+
+.menuResource:hover{
+    color: #762056;
+}
+
+
+.menuFeature {
+    margin-left: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.menuResource {
+    margin-left: 2%;
+    font-size: 20px;
+    font-weight: bold;
 }
