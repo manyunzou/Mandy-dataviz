@@ -1,3 +1,7 @@
+#Issue01-bytheNumbers {
+    margin-top: 40px;
+}
+
 .secondarySectionTitle {
     color: #762056;
     border-bottom: 5px solid #f2672a; 
@@ -8,6 +12,7 @@
 .numbers-left {
     width: 50%;
     float: left;
+    margin-top: 40px;
 }
 
 .numbers-people-chart{
