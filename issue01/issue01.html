@@ -34,6 +34,9 @@
     <!-- Hunger & Education -->
     <link rel="stylesheet" href="css/hungerEducation.css">
     <script src="js/hungerEducation.js"></script>
+    <!-- Monthly Survival Cost -->
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet" href="css/monthlySurvival.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto|Roboto+Condensed|Rubik" rel="stylesheet">
 
@@ -267,6 +270,227 @@
   </div>
 
   <!-- Hunger & Education ends here -->
+
+  <div class="row dottedLine"></div>
+
+  <h2 id="Issue01-monthlyBudget">MONTHLY BUDGET</h2>
+
+  <!-- ALICE Survival starts here-->
+  <div id="Issue01-monthlySurvival">
+    <h1><span class="secondarySectionTitle">ALICE SURVIVAL BUDGET</span></h1>
+
+      <div class="section-content-container">
+          <h2 class="content-secondaryTitle">ALICE</h2>
+          <p class="section-content">
+          Created by the United Way, ALICE stands for-Asset Limited, Income Constrained, Employed. ALICE represents those in our communities who are working yet still struggling to make ends meet.
+          <br/>
+          <br/>
+          The ALICE Household Survival budget takes into consideration the bare minimum costs of basic necessities needed in Virginia. This budget does not allow for any savings and provides for a very modest living.
+          </p>
+      </div>
+      
+      <div class="section-content-container">
+          <h2 class="content-secondaryTitle">FEDERAL POVERTY LINE</h2>
+          <p class="section-content">Annually set to reflect the minimum income needed for food, clothing, transportation, shelter and other necessities. Federal poverty levels are used to determine the eligibility of an individual or family for certain federal assistance programs.
+          </p>
+      </div>
+
+      <div class="budget-person-container">
+          <div id="budget_person">
+              <h2 class="ms-chartTitle">Virginia Single Adult</h2>
+          </div>
+          <script>
+          var width = 550,
+              height = 500,
+              radius = Math.min(width, height) / 2;
+
+              var image_width = 40,
+                  image_height = 40;
+
+          var color = d3.scaleOrdinal()
+                      .range(["#772057","#e1749e","#f2682a","#c9177d","#881c55","#f79b8b"]);
+
+          var arc = d3.arc()
+                  .outerRadius(radius - 10)
+                  .innerRadius(radius- 110);
+
+          var pie = d3.pie()
+                      .sort(null)
+                      .value(function(d){return d.Money; });
+
+          var svg = d3.select("#budget_person").append("svg")
+                      .attr("width", width)
+                      .attr("height", height)
+                      .attr("id","chart_person")
+                      .append("g")
+                      .attr("transform","translate(300,250)");
+
+          d3.csv("data/personalData.csv", function(error,data){
+              if (error) throw error;
+
+              var g = svg.selectAll(".arc")
+                  .data(pie(data))
+                  .enter().append("g")
+                  .attr("class", function(d){return "p" + d.data.Name; });
+
+              g.append("path")
+                  .attr("d", arc)
+                  .style("fill", function(d){return color(d.data.Name); });
+
+              g.append("g")
+                  .attr("transform", function(d){return "translate(" + arc.centroid(d) + ")"; })
+                  .append("svg:image")
+                      .attr("xlink:href", function(d){return d.data.Image; })
+                      .attr("width", image_width)
+                      .attr("height", image_height)
+                      .attr("x", -1*image_width/2)
+                      .attr("y", -1*image_height/2);
+
+              g.append("svg:image")
+                  .attr("x", -75)
+                  .attr("y", -30)
+                  .attr("width", 150)
+                  .attr("height", 150)
+                  .attr("xlink:href","icons/ms_personal.png");
+
+              g.append("text")
+              .attr("x", -82)
+              .attr("y", -65)
+              .style("font-size","50px")
+              .style("fill","#f2672a")
+              .style("font-family",'"Montserrat",sans-serif')
+              .style("font-weight","bold")
+              .attr("class","ms-number-title")
+              .text("$1,856");
+
+              g.append("text")
+              .attr("x", -120)
+              .attr("y", -30)
+              .style("font-size","15px")
+              .style("font-family",'"Montserrat",sans-serif')
+              .style("font-weight","bold")
+              .attr("class","ms-number-description")
+              .text('MONTHLY "SURVIVAL" BUDGET');
+
+          });
+
+          $("#chart_person").addClass("animated rotateIn");
+
+          </script>
+
+          <div id="budget-person-numbers">
+              <p class="pHousing-text"><span class="pHousing-budget-person-numbers-title">Housing:</span> $689</p>
+              <p class="pHealth-text"><span class="pHealth-budget-person-numbers-title">Health Care:</span> $170</p>
+              <p class="pFood-text"><span class="pFood-budget-person-numbers-title">Food:</span> $169</p>
+              <p class="pMisc-text"><span class="pMisc-budget-person-numbers-title">Miscellaneous:</span> $169</p>
+              <p class="pTrans-text"><span class="pTrans-budget-person-numbers-title">Transportation:</span> $316</p>
+              <p class="pTaxes-text"><span class="pTaxes-budget-person-numbers-title">Taxes:</span> $343</p>
+
+              <img class="buget-bar" src="icons/person-poverty-line2.png" />
+          </div>
+
+      </div>
+
+      <div class="budget-family-container">
+          <div id="budget_family">
+              <h2 class="ms-chartTitle">Virginia Single Adult</h2>
+          </div>
+
+           <script>
+          var fwidth = 550,
+              fheight = 500,
+              fradius = Math.min(fwidth, fheight) / 2;
+
+              var fimage_width = 40,
+                  fimage_height = 40;
+
+          var fcolor = d3.scaleOrdinal()
+                      .range(["#772057","#e1749e","#f2682a","#c9177d","#881c55","#f79b8b","#772057"]);
+
+          var farc = d3.arc()
+                  .outerRadius(radius - 10)
+                  .innerRadius(radius- 110);
+
+          var fpie = d3.pie()
+                      .sort(null)
+                      .value(function(d){return d.Money; });
+
+          var fsvg = d3.select("#budget_family").append("svg")
+                      .attr("width", fwidth)
+                      .attr("height", fheight)
+                      .attr("id","chart_family")
+                      .append("g")
+                      .attr("transform","translate(300,250)");
+
+          d3.csv("data/familyData.csv", function(error,fdata){
+              if (error) throw error;
+
+              var fg = fsvg.selectAll(".arc")
+                  .data(fpie(fdata))
+                  .enter().append("g")
+                  .attr("class", function(d){return "f" + d.data.Name; });
+
+              fg.append("path")
+                  .attr("d", farc)
+                  .style("fill", function(d){return color(d.data.Name); });
+
+              fg.append("g")
+                  .attr("transform", function(d){return "translate(" + arc.centroid(d) + ")"; })
+                  .append("svg:image")
+                      .attr("xlink:href", function(d){return d.data.Image; })
+                      .attr("width", fimage_width)
+                      .attr("height", fimage_height)
+                      .attr("x", -1*fimage_width/2)
+                      .attr("y", -1*fimage_height/2);
+
+              fg.append("svg:image")
+                  .attr("x", -95)
+                  .attr("y", -50)
+                  .attr("width", 190)
+                  .attr("height", 190)
+                  .attr("xlink:href","icons/ms_family.png");
+
+              fg.append("text")
+              .attr("x", -82)
+              .attr("y", -65)
+              .style("font-size","50px")
+              .style("fill","#f2672a")
+              .style("font-family",'"Montserrat",sans-serif')
+              .style("font-weight","bold")
+              .attr("class","ms-number-title")
+              .text("$5,089");
+
+              fg.append("text")
+              .attr("x", -120)
+              .attr("y", -30)
+              .style("font-size","15px")
+              .style("font-family",'"Montserrat",sans-serif')
+              .style("font-weight","bold")
+              .attr("class","ms-number-description")
+              .text('MONTHLY "SURVIVAL" BUDGET');
+
+          });
+
+          $("#chart_family").addClass("animated rotateIn");
+
+          </script>
+
+          <div id="budget-family-numbers">
+              <p class="fHousing-text"><span class="fHousing-budget-family-numbers-title">Housing:</span> $689</p>
+              <p class="fHealthcare-text"><span class="fHealthcare-budget-family-numbers-title">Health Care:</span> $170</p>
+              <p class="fFood-text"><span class="fFood-budget-family-numbers-title">Food:</span> $169</p>
+              <p class="fMisc-text"><span class="fMisc-budget-family-numbers-title">Miscellaneous:</span> $169</p>
+              <p class="fTrans-text"><span class="fTrans-budget-family-numbers-title">Transportation:</span> $316</p>
+              <p class="fTaxes-text"><span class="fTaxes-budget-family-numbers-title">Taxes:</span> $343</p>
+              <p class="fChildcare-text"><span class="fChildcare-budget-family-numbers-title">Child Care:</span> $1204</p>
+
+              <img class="buget-bar" src="icons/family-poverty-line2.png" />
+          </div>
+      </div>
+    </div>
+
+  <!-- ALICE Survival -->
+
 
    </div>
     <!-- Content section ends here -->
