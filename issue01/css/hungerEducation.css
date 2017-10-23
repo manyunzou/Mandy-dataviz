@@ -1,0 +1,105 @@
+/* Hunger & Education */
+
+#Issue01-hungerEducation {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  clear: left;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+.he_left{
+  width: 40%;
+  float: left;
+}
+
+.he_number01 {
+  margin-bottom: 20px;
+}
+
+.he_number01_highlight {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #c9177d;
+  margin-bottom: 50px;
+  float: left;
+}
+
+.he_number01_text {
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 3px;
+  font-family: "Roboto", sans-serif;
+  float: left;
+}
+
+.he_number02_highlight {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #c9177d;
+  margin-bottom: 50px;
+  float: left;
+  clear: both;
+}
+
+.he_number02_text {
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 3px;
+  font-family: "Roboto", sans-serif;
+  float: left;
+}
+
+.he_number03_highlight {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #c9177d;
+  margin-bottom: 50px;
+  float: left;
+  clear: both;
+}
+
+.he_number03_text {
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 3px;
+  font-family: "Roboto", sans-serif;
+  float: left;
+}
+
+.he_right {
+  vertical-align: middle;
+}
+
+.he_coin1 {
+  width: 30px;
+  visibility: hidden;
+  vertical-align: middle;
+  margin-left: 280px;
+}
+
+.he_coin2 {
+  width: 40px;
+  visibility: hidden;
+  vertical-align: middle;
+  margin-left: 320px;
+}
+
+.he_coin3 {
+  width: 50px;
+  margin-left: 280px;
+  visibility: hidden;
+  vertical-align: middle;
+}
+
+.he_piggy {
+  width: 200px;
+  vertical-align: middle;
+  clear: both;
+  margin-left: 220px;
+}

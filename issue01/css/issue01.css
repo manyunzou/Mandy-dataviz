@@ -13,6 +13,15 @@ p {
     margin-left: 3%;
 }
 
+.dottedLine{
+    width: 100%;
+    border-bottom: 2px dotted #ccc;
+}
+
+.section-content {
+    margin-top: 20px;
+}
+
 
 /* Top Menu Area */
 .spotlight-logo {

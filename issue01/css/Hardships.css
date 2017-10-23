@@ -1,0 +1,84 @@
+/* Hunger & Education page setting */
+
+#Issue01-hardships {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  clear: left;
+}
+
+.hs_left{
+  width: 35%;
+  float: left;
+  margin-top: 20px;
+}
+
+.hs_number01 {
+  margin-bottom: 40px;
+}
+
+.hs_number01_highlight {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f2672a;
+  margin-bottom: 50px;
+  float: left;
+}
+
+.hs_number01_text {
+  width: 300px;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+  float: left;
+}
+
+.hs_number02 {
+  margin-bottom: 40px;
+}
+
+.hs_number02_highlight {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f2672a;
+  margin-bottom: 50px;
+  float: left;
+  clear: both;
+}
+
+.hs_number02_text {
+  width: 300px;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+  float: left;
+}
+
+.hs_number03{
+  margin-bottom: 40px;
+}
+
+.hs_number03_highlight {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f2672a;
+  margin-bottom: 50px;
+  float: left;
+  clear: both;
+}
+
+.hs_number03_text {
+  width: 300px;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+  float: left;
+}
+
+.hs-icons{
+  width: 280px;
+  margin-top: 30px;
+  margin-left: 230px;
+}
