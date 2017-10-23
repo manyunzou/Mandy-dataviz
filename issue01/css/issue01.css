@@ -5,8 +5,12 @@ body{
     margin-top: 1%;
 }
 
-a:hover{
+p {
+    font-family: "Roboto", sans-serif;
+}
 
+.pageContent{
+    margin-left: 3%;
 }
 
 
@@ -104,8 +108,9 @@ a:hover{
     margin-left: 2%;
     font-size: 20px;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 0px;
+    line-height: 20px;
 }
 
 .menuOverview:hover{
@@ -125,11 +130,32 @@ a:hover{
     margin-left: 2%;
     font-size: 20px;
     font-weight: bold;
+    margin-top: 25px;
     margin-bottom: 0px;
+    line-height: 20px;
 }
 
 .menuResource {
     margin-left: 2%;
     font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    line-height: 20px;
+}
+
+/* All same style */
+.sectionTitle {
+    font-family: "Rubik", sans-serif;
+    color: #f2672a;
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.sectionSubtitle {
+    width: 20%;
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 22px;
     font-weight: bold;
 }

@@ -9,19 +9,29 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="issue01.css">
-    <link rel="stylesheet" href="hover.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto|Roboto+Condensed|Rubik" rel="stylesheet">
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="js/countUp.js"></script>
+
+    <link rel="stylesheet" href="css/issue01.css">
+    <link rel="stylesheet" href="css/hover.css">
+
+    <!-- By the number -->
+    <link rel="stylesheet" href="css/bytheNumbers.css">
+    <script src="js/bytheNumbers.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto|Roboto+Condensed|Rubik" rel="stylesheet">
+
   </head>
 
   <body>
+
+    <!-- Header section starts here -->
     <div class="row">
       <div class="col-6 col-md-4"><img class="spotlight-logo" src="img/Spotlight_Logo.png" /></div>
       <div class="col-6 col-md-4 collegeLine">NORTHERN VIRGINIA COMMUNITY COLLEGE</div>
@@ -41,18 +51,79 @@
 
     <div class="row briefArea">
       <div class="briefMenu">
-        <h4 class="menuOverview">OVERVIEW</h4>
+        <div class="menuOverview hvr-underline-from-center">OVERVIEW</div>
         <br/>
-        <h4 class="menuFeature">MONTHLY 
+        <div class="menuFeature hvr-underline-from-center">MONTHLY 
           <br/>
-          BUDGET</h4>
+          BUDGET</div>
         <br/>
-        <h4 class="menuResource">NOVA 
+        <div class="menuResource hvr-underline-from-center">NOVA 
           <br/>
-          RESOURCES</h4>
+          RESOURCES</div>
       </div>
     </div>
 
+    <!-- Header section ends here -->
+
+    <!-- Content section starts here -->
+
+   <!-- OVERVIEW Section -->
+   <div class="pageContent">
+
+     <h2 class="headline sectionTitle">OVERVIEW</h2>
+     <div class="row">
+        <div class="col-3 sectionSubtitle">WHAT DOES IT MEAN TO BE FOOD INSECURE?</div>
+        <div class="col-12 col-md-8"><p>The U.S. Department of Agriculture defines food insecurity as the lack of “consistent, dependable access to enough food for active, healthy living.” In other words, it means going hungry, or being at risk of going hungry.</p>
+
+        <p>For some, food insecurity is a lifelong struggle, but for most the cause is a temporary financial setback. Every person has needs, which in our society include food, shelter, health care, transportation, and sometimes child care. When an unexpected and costly event happens and money suddenly becomes scarce, an individual may find they have to temporarily forgo one of these needs. Often, that one is food.</p>
+       
+        <p>Food insecurity is an all too common problem for today’s college students. According to research by the Urban Institute, from 2011-2015 one in five students at two-year colleges lived in a food insecure household.</p>
+        </div>
+     </div>
+
+     <!-- By the Numbers -->
+     <h1><span class="secondarySectionTitle">BY THE NUMBERS</span></h1>
+
+    <div class="numbers-left">
+        <div class="numbers-people-chart">
+          <!-- First line -->
+            <img class="numbers-people-mark" src="icons/people-orange.png"><img class="numbers-people-mark" src="icons/people-orange.png"><img class="numbers-people-mark" src="icons/people-orange.png"><img class="numbers-people-mark" src="icons/people-orange.png"><img class="numbers-people-mark" src="icons/people-purple.png"><img class="numbers-people-mark" src="icons/people-purple.png"><img class="numbers-people-mark" src="icons/people-purple.png"><img class="numbers-people-mark" src="icons/people-purple.png"><img class="numbers-people-mark" src="icons/people-purple.png"><img class="numbers-people-mark" src="icons/people-purple.png">
+            <br/>
+          <!-- Second Line -->
+            <img class="numbers-people-mark" src="icons/people-orange.png"><img class="numbers-people-mark" src="icons/people-orange.png"><img class="numbers-people-mark" src="icons/people-orange.png"><img class="numbers-people-mark" src="icons/people-orange.png"><img class="numbers-people-mark" src="icons/people-purple.png"><img class="numbers-people-mark" src="icons/people-purple.png"><img class="numbers-people-mark" src="icons/people-purple.png"><img class="numbers-people-mark" src="icons/people-purple.png"><img class="numbers-people-mark" src="icons/people-purple.png"><img class="numbers-people-mark" src="icons/people-purple.png">
+        </div>
+        
+        <div class="numbers-numbers-section">
+            <p class="numbers-numbers"><span id="numbers-count1">20</span> million</p>
+            <p class="numbers-des">undergraduates nationwide</p> 
+        </div>
+
+        <div class="numbers-numbers-section2">
+            <p class="numbers-numbers2"><span id="numbers-count2">40</span> percent</p>
+            <p class="numbers-des">attend community college</p> 
+        </div>
+    </div>
+
+
+    <div class="numbers-food-insecurity">
+        <img src="icons/people-three.png"></img>
+        <p>food insecurity affects 
+          <br/>
+          as many as
+          <br/>
+          <span class="numbers-food-data">1 IN 3</span>
+          <br/>
+          undergraduate students</p>
+    </div>
+
+
+   </div>
+    <!-- Content section ends here -->
+
+    <!-- Footage starts here -->
+    <div class="row pageFootage">
+
+    </div>
     
   </body>
 

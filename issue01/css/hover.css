@@ -2185,9 +2185,9 @@
   z-index: -1;
   left: 50%;
   right: 50%;
-  bottom: 0;
+  bottom: -2.5px;
   background: #762056;
-  height: 4px;
+  height: 5px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.3s;
