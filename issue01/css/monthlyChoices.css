@@ -1,0 +1,61 @@
+/* Monthly Choices */
+
+#Issue01-monthlyChoices {
+  margin-bottom: 40px;
+  clear: left;
+}
+
+.mc-graphics-section{
+  margin-top: 40px;
+}
+
+.mc-graphics {
+  width: 150px;
+  margin-left: 15px;
+  visibility: hidden;
+}
+
+.mc-graphics-text{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.mc-graphics-highlight{
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.mc-food{
+  width: 15%;
+  float: left;
+}
+
+.mc-equal{
+  width: 5%;
+  margin-left: 60px;
+  float: left;
+}
+
+.mc-equal-mark{
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+}
+
+.mc-books{
+  width: 15%;
+  margin-left: 70px;
+  float: left;
+}
+
+.mc-transportation{
+  width: 15%;
+  margin-left: 70px;
+  float: left;
+}
+
+.mc-hands{
+  width: 15%;
+  margin-left: 70px;
+  float: left;
+}
