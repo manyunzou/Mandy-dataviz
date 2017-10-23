@@ -3,6 +3,7 @@
 }
 
 .secondarySectionTitle {
+    font-size: 30px;
     color: #762056;
     border-bottom: 5px solid #f2672a; 
     font-family: "Montserrat", sans-serif;
@@ -27,6 +28,7 @@
 
 .numbers-numbers-section{
     width: 70%;
+    margin-top: 20px;
 }
 
 .numbers-numbers-section2{
