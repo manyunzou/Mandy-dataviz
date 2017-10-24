@@ -28,7 +28,7 @@ $( document ).ready(function() {
     coinCount01.start();
 
     // For count up animation 02
-    var coinCount02 = new CountUp(document.getElementById("numbers-count2"),0, 40, 0, 9);
+    var coinCount02 = new CountUp(document.getElementById("numbers-count2"),0, 35, 0, 9);
     coinCount02.start();
 
     function addPop(){
