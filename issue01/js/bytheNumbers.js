@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+
+
     // for toliet people to pop up one by one
     $(".numbers-people-chart img").each(function(i){
         var $img = $(this);
@@ -6,22 +8,6 @@ $( document ).ready(function() {
             $img.addClass("bigEntrance");
         }, i*200);
     });
-
-    // function addPop() {
-    //     $(".numbers-numbers-section").addClass("bigEntrance");
-    // };
-
-    // $(".numbers-numbers-section").addClass(function(){
-    //     setTimeout(addPop, 3000);
-    // });
-
-    // function addPop2() {
-    //     $(".numbers-numbers-section2").addClass("bigEntrance");
-    // };
-
-    // $(".numbers-numbers-section2").addClass(function(){
-    //     setTimeout(addPop2, 3500);
-    // });
 
     // For count up animation 01
     var coinCount01 = new CountUp(document.getElementById("numbers-count1"),0,20, 0, 9);

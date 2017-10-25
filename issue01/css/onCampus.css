@@ -125,7 +125,28 @@
   float: left;
 }
 
+/* For Nothern Virginia Map */
+.lm-resources-map {
+  width: 800px;
+}
 
+.lm-resources-map-map {
+  width: 50%;
+  margin-top: 20px;
+  float: left;
+}
+
+.lm-resources-map-content{
+  width: 50%;
+  margin-top: 30px;
+  float: left;
+}
+
+#issue01-NV-map {
+  width: 250px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
 
 
 
