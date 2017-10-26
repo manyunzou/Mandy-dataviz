@@ -82,3 +82,99 @@
   margin-top: 30px;
   margin-left: 230px;
 }
+
+/* Hardships Info-button bubble */
+
+.issue01-infoButton-hsSource-01 {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.infoButton-hsSource-tip01 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #FFF;
+    color: #000000;
+    font-size: 10px;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #f2672a;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.issue01-infoButton-hsSource-01:hover .infoButton-hsSource-tip01 {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.issue01-infoButton-hsSource-02 {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.infoButton-hsSource-tip02 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #FFF;
+    color: #000000;
+    font-size: 10px;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #f2672a;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.issue01-infoButton-hsSource-02:hover .infoButton-hsSource-tip02 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.issue01-infoButton-hsSource-03 {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.infoButton-hsSource-tip03 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #FFF;
+    color: #000000;
+    font-size: 10px;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #f2672a;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.issue01-infoButton-hsSource-03:hover .infoButton-hsSource-tip03 {
+    visibility: visible;
+    opacity: 1;
+}
