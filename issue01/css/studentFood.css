@@ -6,6 +6,11 @@
   clear: left;
 }
 
+.section-content-sf {
+  font-family: "Roboto",sans-serif;
+  margin-bottom: 10px;
+}
+
 /* quote bubble 01*/
 .sf_quoteBubble1 {
     position:relative;
@@ -48,7 +53,7 @@
 /* quote bubble 02*/
 .sf_quoteBubble2 {
     position:relative;
-    padding:15px;
+    padding:27px;
     margin:1em 40px 3em;
     background:#c9177d; /* default background for browsers without gradient support */
   /* css3 */
@@ -171,4 +176,36 @@
 
 .sf_people_icon {
     width: 150px;
+}
+
+/* Student Food Tooltip */
+.issue01-infoButton-sfSource-01 {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.infoButton-sfSource-tip01 {
+    visibility: hidden;
+    width: 300px;
+    background-color: #FFF;
+    color: #000000;
+    font-size: 10px;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #f2672a;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -130px;
+}
+
+.issue01-infoButton-sfSource-01:hover .infoButton-sfSource-tip01 {
+    visibility: visible;
+    opacity: 1;
 }
