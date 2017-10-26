@@ -148,5 +148,30 @@
   margin-bottom: 50px;
 }
 
+/* For hover over map */
+.virginia-map-p1 {
+  cursor: pointer;
+}
+
+.virginia-map-p2 {
+  cursor: pointer;
+}
+
+.virginia-map-p3 {
+  cursor: pointer;
+}
+
+.virginia-map-p4 {
+  cursor: pointer;
+}
+
+
+.virginia-map-p5 {
+  cursor: pointer;
+}
+
+.virginia-map-p6 {
+  cursor: pointer;
+}
 
 
