@@ -245,3 +245,10 @@ p {
     font-size: 18px;
 }
 
+/* Info Button */
+.issue01-infoButton{
+    width: 20px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+
