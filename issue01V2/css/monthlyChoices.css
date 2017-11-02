@@ -1,0 +1,158 @@
+/* Monthly Choices */
+
+#Issue01-monthlyChoices {
+  margin-bottom: 40px;
+  clear: left;
+}
+
+.mc-graphics-section{
+  margin-top: 40px;
+}
+
+.mc-graphics {
+  width: 150px;
+  margin-left: 15px;
+  visibility: hidden;
+}
+
+.mc-graphics-text{
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.mc-graphics-highlight{
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.mc-food{
+  width: 15%;
+  float: left;
+}
+
+.mc-equal{
+  width: 5%;
+  margin-left: 60px;
+  float: left;
+}
+
+.mc-equal-mark{
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.mc-books{
+  width: 15%;
+  margin-left: 70px;
+  float: left;
+}
+
+.mc-transportation{
+  width: 15%;
+  margin-left: 70px;
+  float: left;
+}
+
+.mc-hands{
+  width: 15%;
+  margin-left: 70px;
+  float: left;
+}
+
+
+/* MC info buttons */
+
+.issue01-infoButton-mcSource-01 {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.infoButton-mcSource-tip01 {
+    visibility: hidden;
+    width: 200px;
+    background-color: #FFF;
+    color: #000000;
+    font-size: 10px;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #f2672a;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: -120%;
+    left: 50%;
+    margin-left: -90px;
+}
+
+.issue01-infoButton-mcSource-01:hover .infoButton-mcSource-tip01 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.issue01-infoButton-mcSource-02 {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.infoButton-mcSource-tip02 {
+    visibility: hidden;
+    width: 200px;
+    background-color: #FFF;
+    color: #000000;
+    font-size: 10px;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #f2672a;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: -120%;
+    left: 50%;
+    margin-left: -90px;
+}
+
+.issue01-infoButton-mcSource-02:hover .infoButton-mcSource-tip02 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.issue01-infoButton-mcSource-03 {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.infoButton-mcSource-tip03 {
+    visibility: hidden;
+    width: 230px;
+    background-color: #FFF;
+    color: #000000;
+    font-size: 10px;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #f2672a;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: -250%;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.issue01-infoButton-mcSource-03:hover .infoButton-mcSource-tip03 {
+    visibility: visible;
+    opacity: 1;
+}

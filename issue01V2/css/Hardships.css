@@ -1,0 +1,180 @@
+/* Hunger & Education page setting */
+
+#Issue01-hardships {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  clear: left;
+}
+
+.hs_left{
+  width: 35%;
+  float: left;
+  margin-top: 20px;
+}
+
+.hs_number01 {
+  margin-bottom: 40px;
+}
+
+.hs_number01_highlight {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f2672a;
+  margin-bottom: 50px;
+  float: left;
+}
+
+.hs_number01_text {
+  width: 300px;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+  float: left;
+}
+
+.hs_number02 {
+  margin-bottom: 40px;
+}
+
+.hs_number02_highlight {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f2672a;
+  margin-bottom: 50px;
+  float: left;
+  clear: both;
+}
+
+.hs_number02_text {
+  width: 300px;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+  float: left;
+}
+
+.hs_number03{
+  margin-bottom: 40px;
+}
+
+.hs_number03_highlight {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f2672a;
+  margin-bottom: 50px;
+  float: left;
+  clear: both;
+}
+
+.hs_number03_text {
+  width: 300px;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+  float: left;
+}
+
+.hs-icons{
+  width: 280px;
+  margin-top: 30px;
+  margin-left: 230px;
+}
+
+/* Hardships Info-button bubble */
+
+.issue01-infoButton-hsSource-01 {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.infoButton-hsSource-tip01 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #FFF;
+    color: #000000;
+    font-size: 10px;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #f2672a;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.issue01-infoButton-hsSource-01:hover .infoButton-hsSource-tip01 {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.issue01-infoButton-hsSource-02 {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.infoButton-hsSource-tip02 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #FFF;
+    color: #000000;
+    font-size: 10px;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #f2672a;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.issue01-infoButton-hsSource-02:hover .infoButton-hsSource-tip02 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.issue01-infoButton-hsSource-03 {
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+
+.infoButton-hsSource-tip03 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #FFF;
+    color: #000000;
+    font-size: 10px;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #f2672a;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.issue01-infoButton-hsSource-03:hover .infoButton-hsSource-tip03 {
+    visibility: visible;
+    opacity: 1;
+}
