@@ -67,9 +67,16 @@ p {
 
 
 /* Pattern & Headline area */
+.headerArea{
+    position: relative;
+    margin-bottom: 680px;
+}
+
+
 .patternArea {
     margin-top: 30px;
     margin-left: 1px;
+    position: absolute;
 }
 
 .issueName {
@@ -100,56 +107,62 @@ p {
 }
 
 /* Brief Area */
+
+.briefTeaserArea{
+    margin-left: 5%;
+    position: absolute;
+    top: 420px;
+    z-index: 10;
+}
+
 .briefArea {
-    margin-top: 20px;
+    width: 200px;
     margin-left: 1px;
+    background: #762056;
 }
 
 .briefMenu {
     font-family: "Rubik", sans-serif;
-    background-image: url("img/topBrief.png");
-    width: 1230px;
-    height: 200px;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
     cursor: pointer;
 }
 
 .menuOverview {
     margin-left: 2%;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     margin-top: 25px;
     margin-bottom: 0px;
     line-height: 20px;
 }
-
-.menuOverview:hover{
-    color: #762056;
-}
-
-.menuFeature:hover{
-    color: #762056;
-}
-
-.menuResource:hover{
-    color: #762056;
-}
-
 
 .menuFeature {
     margin-left: 2%;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     margin-top: 25px;
     margin-bottom: 0px;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 .menuResource {
     margin-left: 2%;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     margin-top: 25px;
-    line-height: 20px;
+    line-height: 25px;
+}
+
+.teaserArea{
+    margin-left: 25px;
+}
+
+.teaserArea img {
+    width: 900px;
 }
 
 /* All same style */
