@@ -9,8 +9,16 @@ p {
     font-family: "Roboto", sans-serif;
 }
 
+.pageContent-container {
+    width: 1230px;
+    background-color: #ECECEC;
+}
+
+
 .pageContent{
-    margin-left: 3%;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding-top: 560px;
 }
 
 .dottedLine{
@@ -69,7 +77,6 @@ p {
 /* Pattern & Headline area */
 .headerArea{
     position: relative;
-    margin-bottom: 680px;
 }
 
 
