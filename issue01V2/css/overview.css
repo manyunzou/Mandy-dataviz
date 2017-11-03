@@ -1,13 +1,20 @@
 #Issue01-overview {
     width: 1112px;
     background-color: #fff;
+    padding-top: 20px;
     margin-top: 20px;
 }
 
+#Issue01-overview .row {
+    margin-left: 20%;
+    padding-left: 30px;
+}
+
 #Issue01-overview h2{
-    font-family: "Rubik", sans-serif;
-    color: #f2672a;
-    font-size: 50px;
+    margin-left: 13px;
+    width: 30%;
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 30px;
     font-weight: bolder;
     text-transform: uppercase;
 }
