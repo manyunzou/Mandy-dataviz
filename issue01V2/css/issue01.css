@@ -161,6 +161,11 @@ input[type=text]:focus {
     line-height: 20px;
 }
 
+.menuOverview a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .menuFeature {
     margin-left: 2%;
     font-size: 23px;
@@ -170,12 +175,22 @@ input[type=text]:focus {
     line-height: 25px;
 }
 
+.menuFeature a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .menuResource {
     margin-left: 2%;
     font-size: 23px;
     font-weight: bold;
     margin-top: 25px;
     line-height: 25px;
+}
+
+.menuResource a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .teaserArea{
