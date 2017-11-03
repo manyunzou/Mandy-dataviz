@@ -1,13 +1,15 @@
 /* Hunger & Education page setting */
 
 #Issue01-hardships {
+  background-color: #fff;
+  width: 1112px;
   margin-top: 40px;
   margin-bottom: 40px;
   clear: left;
 }
 
 .hs_left{
-  width: 35%;
+  width: 40%;
   float: left;
   margin-top: 20px;
 }

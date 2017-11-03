@@ -173,15 +173,6 @@ p {
 }
 
 /* All same style */
-#Issue01-overview {
-    font-family: "Rubik", sans-serif;
-    color: #f2672a;
-    font-size: 50px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    margin-top: 50px;
-}
-
 .sectionSubtitle {
     width: 20%;
     font-family: "Montserrat Bold", sans-serif;
@@ -201,7 +192,7 @@ p {
 /* Page Footer */
 .footerMenu{
     clear: both;
-    margin-top: 250px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 

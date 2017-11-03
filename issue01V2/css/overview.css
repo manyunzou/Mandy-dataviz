@@ -1,0 +1,13 @@
+#Issue01-overview {
+    width: 1112px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+#Issue01-overview h2{
+    font-family: "Rubik", sans-serif;
+    color: #f2672a;
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
