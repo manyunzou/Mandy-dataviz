@@ -72,6 +72,7 @@ p {
     color: #762056;
 }
 
+
 /* Search box */
 
 input[type=text] {
@@ -183,6 +184,20 @@ input[type=text]:focus {
 
 .teaserArea img {
     width: 900px;
+}
+
+/* Fixed menu */
+
+.fixedMenu {
+    position: fixed;
+    top: 30px;
+    left: 0;
+}
+
+.fixedBriefArea {
+    width: 120px;
+    margin-left: 1px;
+    background: #762056;
 }
 
 /* All same style */
