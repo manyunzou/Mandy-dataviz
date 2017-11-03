@@ -3,6 +3,7 @@
 #Issue01-hungerEducation {
   background-color: #fff;
   width: 1112px;
+  height: 400px;
   margin-top: 40px;
   margin-bottom: 40px;
   clear: left;
@@ -13,7 +14,7 @@ h1 {
 }
 
 .he_left{
-  width: 40%;
+  width: 50%;
   float: left;
 }
 
@@ -82,19 +83,19 @@ h1 {
   width: 30px;
   visibility: hidden;
   vertical-align: middle;
-  margin-left: 280px;
+  margin-left: 90px;
 }
 
 .he_coin2 {
   width: 40px;
   visibility: hidden;
   vertical-align: middle;
-  margin-left: 320px;
+  margin-left: 40px;
 }
 
 .he_coin3 {
   width: 50px;
-  margin-left: 280px;
+  margin-left: 80px;
   visibility: hidden;
   vertical-align: middle;
 }
@@ -103,7 +104,6 @@ h1 {
   width: 200px;
   vertical-align: middle;
   clear: both;
-  margin-left: 220px;
 }
 
 /* Hunger Education Info Button */
