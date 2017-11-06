@@ -268,17 +268,17 @@ input[type=text]:focus {
 
 .pageFooter{
     width: 100%;
-    height: 300px;
+    height: 360px;
     margin-left: 1px;
     background-color: #484848;
 }
 
 .pageFooter-content {
+    color: white;
     margin-top: 2%;
     margin-left: 5%;
     text-align: center;
-    background-color: white;
-    height: 260px;
+    height: 360px;
     width: 90%;
 }
 
@@ -288,13 +288,20 @@ input[type=text]:focus {
     margin-top: 30px;
     margin-bottom: 5px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .pageFooter-content p{
     text-align: center;
 }
 
+.pageFooter-content-names {
+    width: 70%;
+    margin-left: 15%;
+}
+
 .pageFooter-content-names p{
+    line-height: 18px;
     margin-bottom: 5px;
 }
 
