@@ -5,6 +5,10 @@
     background-color: #fff;
 }
 
+#Issue01-bytheNumbers h1{
+    margin-bottom: 30px;
+}
+
 .secondarySectionTitle {
     font-size: 30px;
     color: #762056;
@@ -91,4 +95,12 @@
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 0px;
+}
+
+/* Key part style */
+.numbers-people-key{
+    font-size: 10px;
+    color: #A8A9B0;
+    font-style: italic;
+    margin-top: 5px;
 }
