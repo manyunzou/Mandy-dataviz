@@ -8,6 +8,10 @@
   clear: left;
 }
 
+.section-content {
+  width: 70%;
+}
+
 .mc-graphics-section{
   margin-top: 40px;
 }
