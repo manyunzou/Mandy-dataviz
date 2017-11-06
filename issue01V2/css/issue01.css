@@ -30,6 +30,10 @@ p {
     margin-top: 20px;
 }
 
+.section-content p{
+    width: 60%;
+}
+
 
 /* Top Menu Area */
 .spotlight-logo {
