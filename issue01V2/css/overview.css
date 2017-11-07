@@ -2,19 +2,34 @@
     width: 1112px;
     background-color: #fff;
     padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
     margin-top: 20px;
 }
 
-#Issue01-overview .row {
-    margin-left: 20%;
+#Issue01-overview .Issue01-overview-text {
+    padding-bottom: 10px;
     padding-left: 30px;
+    padding-right: 10px;
 }
 
+#Issue01-overview .Issue01-overview-pic {
+    padding-bottom: 1%;
+    background-color: #000000;
+}
+
+
 #Issue01-overview h2{
-    margin-left: 13px;
-    width: 30%;
     font-family: "Montserrat Bold", sans-serif;
     font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#Issue01-overview h4{
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 18px;
+    color: #871b55;
     font-weight: bolder;
     text-transform: uppercase;
 }
