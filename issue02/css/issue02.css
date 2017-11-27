@@ -1,0 +1,320 @@
+/* For all page */
+
+body{
+    margin-left: 2.5%;
+    margin-top: 1%;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+.pageContent-container {
+    width: 1230px;
+    background-color: #ECECEC;
+}
+
+
+.pageContent{
+    margin-left: 5%;
+    margin-top: 5%;
+    padding-top: 560px;
+}
+
+.dottedLine{
+    width: 100%;
+    border-bottom: 2px dotted #ccc;
+}
+
+.section-content {
+    margin-top: 20px;
+}
+
+.section-content p{
+    width: 60%;
+}
+
+
+/* Top Menu Area */
+.spotlight-logo {
+    width: 300px;
+}
+
+.collegeLine {
+    margin-top: 60px;
+    left: -110px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+.issueMenu {
+    padding: 0;
+    top: 55px;
+    font-family: "Montserrat Bold", sans-serif;
+    font-weight: bold;
+}
+
+.topIssue {
+    font-size: 15px;
+    margin-right: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.topIssue:hover {
+    color: #762056;
+}
+
+.topIssue2 {
+    font-size: 15px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.topIssue2:hover {
+    color: #762056;
+}
+
+
+/* Search box */
+
+input[type=text] {
+    width: 95px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 28%;
+}
+
+
+
+/* Pattern & Headline area */
+.headerArea{
+    position: relative;
+}
+
+
+.patternArea {
+    margin-top: 30px;
+    margin-left: 1px;
+    position: absolute;
+}
+
+.issueName {
+    width: 1230px;
+    height: 420px;
+    z-index: 1;
+    position: relative;
+    color: white;
+    background-image: url("img/Spotlight_pattern02.png");
+}
+
+.issueName-headline {
+    font-family: "Rubik", sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 16%;
+    font-size: 80px;
+    line-height: 80px;
+    margin-top: 120px;
+    text-transform: uppercase;
+}
+
+.issueName-volume {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 16%;
+}
+
+/* Brief Area */
+
+.briefTeaserArea{
+    margin-left: 5%;
+    position: absolute;
+    top: 420px;
+    height: 200px;
+    z-index: 10;
+}
+
+.briefArea {
+    width: 200px;
+    margin-left: 1px;
+    background: #004927;
+}
+
+.briefMenu {
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menuOverview {
+    margin-left: 2%;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    line-height: 20px;
+}
+
+.menuOverview a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menuFeature {
+    margin-left: 2%;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    line-height: 25px;
+}
+
+.menuFeature a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menuResource {
+    margin-left: 2%;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+.menuResource a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.teaserArea{
+    margin-left: 25px;
+}
+
+.teaserArea img {
+    width: 900px;
+}
+
+/* Fixed menu */
+
+.fixedMenu {
+    position: fixed;
+    top: 30px;
+    left: 0;
+}
+
+.fixedBriefArea {
+    width: 120px;
+    margin-left: 1px;
+    background: #762056;
+}
+
+/* All same style */
+.sectionSubtitle {
+    width: 20%;
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#Issue01-monthlyBudget {
+    font-family: "Rubik", sans-serif;
+    color: #f2672a;
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+/* Page Footer */
+.footerMenu{
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footerMenu .col{
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+}
+
+#menu-oct17 {
+    text-align: right;
+    cursor: pointer;
+}
+
+#menu-oct17:hover {
+    color: #762056;
+}
+
+#menu-pastIssues {
+    text-align: left;
+    cursor: pointer;
+}
+
+#menu-pastIssues:hover {
+    color: #762056;
+}
+
+.pageFooter{
+    width: 100%;
+    height: 360px;
+    margin-left: 1px;
+    background-color: #484848;
+}
+
+.pageFooter-content {
+    color: white;
+    margin-top: 2%;
+    margin-left: 5%;
+    text-align: center;
+    height: 360px;
+    width: 90%;
+}
+
+.pageFooter-content-highlight{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pageFooter-content p{
+    text-align: center;
+}
+
+.pageFooter-content-names {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.pageFooter-content-names p{
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.pageFooter-content-names-title{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Info Button */
+.issue01-infoButton{
+    width: 20px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+

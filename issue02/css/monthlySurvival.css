@@ -1,0 +1,150 @@
+/* Monthly Survival */
+
+#Issue01-monthlySurvival {
+  background-color: #fff;
+  width: 1112px;
+  height: 1550px;
+  margin-bottom: 40px;
+  clear: left;
+}
+
+#Issue01-monthlyChoices h1{
+    margin-top: 30px;
+}
+
+.ms-chartTitle{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+path {
+ stroke: #fff;
+}
+
+.buget-bar{
+    width: 450px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.content-secondaryTitle {
+/*    font-size: 25px;*/
+    margin-bottom: 0px;
+    color: #f2672a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+/* Person numbers container */
+.budget-person-container{
+    clear: both;
+}
+
+#budget_person{
+    width: 50%;
+    margin-top: 20px;
+    float: left;
+}
+
+#budget-person-numbers{
+    width: 30%;
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+/* Style person numbers */
+
+#budget-person-numbers p{
+    font-family: "Roboto", sans-serif;
+}
+
+.pHousing-budget-person-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.pHealth-budget-person-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.pFood-budget-person-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.pMisc-budget-person-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.pTrans-budget-person-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.pTaxes-budget-person-numbers-title {
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+/* Family number container */
+
+#budget-family-container{
+    clear: left;
+}
+
+#budget_family{
+    width: 50%;
+    float: left;
+    clear: left;
+}
+
+#budget-family-numbers{
+    width: 30%;
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+#budget-family-numbers p{
+    font-family: "Roboto", sans-serif;
+}
+
+/* Style family numbers */
+
+.fHousing-budget-family-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.fHealthcare-budget-family-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.fFood-budget-family-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.fMisc-budget-family-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.fTrans-budget-family-numbers-title{
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.fTaxes-budget-family-numbers-title {
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
+
+.fChildcare-budget-family-numbers-title {
+    font-family: "Roboto", sans-serif;
+    color: #f2672a;
+}
