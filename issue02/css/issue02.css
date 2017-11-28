@@ -240,7 +240,7 @@ input[type=text]:focus {
 /* Page Footer */
 .footerMenu{
     clear: both;
-    margin-top: 20px;
+    padding-top: 40px;
     margin-bottom: 10px;
 }
 
@@ -316,5 +316,14 @@ input[type=text]:focus {
     width: 20px;
     margin-bottom: 10px;
     margin-left: 3px;
+}
+
+/* For all the pages */
+.secondarySectionTitle {
+    font-size: 30px;
+    color: #006938;
+    border-bottom: 5px solid #ddb307; 
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
 }
 

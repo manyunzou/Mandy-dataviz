@@ -9,14 +9,6 @@
     margin-bottom: 30px;
 }
 
-.secondarySectionTitle {
-    font-size: 30px;
-    color: #762056;
-    border-bottom: 5px solid #f2672a; 
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-}
-
 .numbers-left {
     width: 50%;
     float: left;
