@@ -3,7 +3,7 @@
 #Issue01-monthlyChoices {
   background-color: #fff;
   width: 1112px;
-  height: 500px;
+  height: 750px;
   margin-bottom: 40px;
   clear: left;
 }
@@ -12,14 +12,15 @@
   width: 70%;
 }
 
-.mc-graphics-section{
+.ga-graphics-section{
   margin-top: 40px;
+  height: 300px;
 }
 
 .mc-graphics {
   width: 150px;
   margin-left: 15px;
-  visibility: hidden;
+  margin-left: 40px;
 }
 
 .mc-graphics-text{
@@ -67,6 +68,19 @@
   width: 15%;
   margin-left: 70px;
   float: left;
+}
+
+.ga-text-section {
+  margin-left: 13%;
+  margin-top: 20px;
+}
+
+.ga-subtitle {
+  color: #006938;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 
