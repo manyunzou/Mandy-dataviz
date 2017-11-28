@@ -236,41 +236,30 @@
 
     <div id="Issue01-studentFood">
       <div style="margin-left: 13%">
-        <h1><span class="secondarySectionTitle">student&food</span></h1>
+        <h1><span class="secondarySectionTitle">WHY NOVA</span></h1>
 
         <div class="section-content-container">
             <div class="section-content-sf">
-              In Fall 2016, NOVA students participated in a survey about their eating habits. Their responses, summarized below, reflect the food-related challenges faced by many NOVA students.
-                <div class="issue01-infoButton-sfSource-01">
-                        <img class="issue01-infoButton" src="img/info-button.png"/>
-                        <span class="infoButton-sfSource-tip01">Wisconsin HOPE Lab. Northern Virginia Community College Report from Fall 2016 Survey of Student Basic Needs. 2016</span>
-                </div>
-              
+              Graduates are surveyed each year about their experiences at NOVA. Recent graduates mentioned the benefits they saw by attending NOVA before transferring to a four-year college or university.              
             </div>
         </div>
 
         <div class="sf_quote">
             <div class="sf_quoteBubble1">
-              <span class="sf_quoteNumber">39%</span>
-                <br/>
-            “The food that I bought just didn’t last and
-            I didn’t have enough money to get more.”</div>
+            “I wasn’t ready to attend a four-year university when I graduated high school. NOVA helped me prepare for that and made me feel ready when I transferred.”
+            </div>
 
             <div class="sf_quoteBubble2">
-              <span class="sf_quoteNumber">47%</span>
-                <br/>
-            “I couldn’t afford
-        to eat balanced meals.”</div>
+            “I was able to achieve a good education with transferable credits to a four-year university.”
+            </div>
 
             <div class="sf_quoteBubble3">
-              <span class="sf_quoteNumber">38%</span>
-                <br/>
-            “I have cut the size of my meals or skipped meals.”</div>
+            “I was able to fulfill a lot of requirements and prerequisites that were then transferred.”
+            </div>
 
             <div class="sf_quoteBubble4">
-              <span class="sf_quoteNumber">30%</span>
-                <br/>
-            “I have been hungry but didn’t eat because there wasn’t enough money for food.”</div>
+            “I saved a lot of money, and my general education credits were waived when I transferred to James Madison University.”
+            </div>
 
         </div>
 
@@ -374,223 +363,6 @@
 
 
     <!-- Hardworking students -->
-
-
-<!--     <h2 id="Issue01-monthlyBudget">MONTHLY BUDGET</h2> -->
-
-    <!-- ALICE Survival starts here-->
-    <div id="Issue01-monthlySurvival">
-        <h1><span class="secondarySectionTitle" style="margin-left: 13%; margin-right: 13%">ALICE SURVIVAL BUDGET</span></h1>
-
-        <div class="section-content-container" style="margin-left: 13%; margin-right: 13%">
-            <p class="section-content">
-            <span class="content-secondaryTitle">FEDERAL POVERTY LINE:</span>
-             The federal poverty line is set annually to reflect the minimum income needed for food, clothing, transportation, shelter, and other necessities. Federal poverty lines are used to determine the eligibility of an individual or family for certain federal assistance programs.
-            </p>
-        </div>
-
-        <div class="section-content-container" style="margin-left: 13%; margin-right: 13%">
-            <p class="section-content">
-            <span class="content-secondaryTitle">ALICE:</span>
-            Created by the United Way, ALICE stands for-<b>A</b>sset <b>L</b>imited, <b>I</b>ncome <b>C</b>onstrained, <b>E</b>mployed. ALICE households are above the federal poverty line, which means they do not always qualify for aid. However, they often struggle to afford basic necessities. The ALICE Household Survival Budget was created to provide a more realistic estimate of the cost of living compared to the federal poverty line.
-            </p>
-        </div>
-
-        <div class="budget-person-container">
-            <div id="budget_person">
-                <h2 class="ms-chartTitle" style="margin-left: 5%">Virginia Single Adult</h2>
-            </div>
-            <script>
-            var width = 550,
-                height = 500,
-                radius = Math.min(width, height) / 2;
-
-                var image_width = 40,
-                    image_height = 40;
-
-            var color = d3.scaleOrdinal()
-                        .range(["#772057","#e1749e","#f2682a","#c9177d","#881c55","#f79b8b"]);
-
-            var arc = d3.arc()
-                    .outerRadius(radius - 10)
-                    .innerRadius(radius- 110);
-
-            var pie = d3.pie()
-                        .sort(null)
-                        .value(function(d){return d.Money; });
-
-            var svg = d3.select("#budget_person").append("svg")
-                        .attr("width", width)
-                        .attr("height", height)
-                        .attr("id","chart_person")
-                        .append("g")
-                        .attr("transform","translate(300,250)");
-
-            d3.csv("data/personalData.csv", function(error,data){
-                if (error) throw error;
-
-                var g = svg.selectAll(".arc")
-                    .data(pie(data))
-                    .enter().append("g")
-                    .attr("class", function(d){return "p" + d.data.Name; });
-
-                g.append("path")
-                    .attr("d", arc)
-                    .style("fill", function(d){return color(d.data.Name); });
-
-                g.append("g")
-                    .attr("transform", function(d){return "translate(" + arc.centroid(d) + ")"; })
-                    .append("svg:image")
-                        .attr("xlink:href", function(d){return d.data.Image; })
-                        .attr("width", image_width)
-                        .attr("height", image_height)
-                        .attr("x", -1*image_width/2)
-                        .attr("y", -1*image_height/2);
-
-                g.append("svg:image")
-                    .attr("x", -75)
-                    .attr("y", -30)
-                    .attr("width", 150)
-                    .attr("height", 150)
-                    .attr("xlink:href","icons/ms_personal.png");
-
-                g.append("text")
-                .attr("x", -82)
-                .attr("y", -65)
-                .style("font-size","50px")
-                .style("fill","#f2672a")
-                .style("font-family",'"Montserrat",sans-serif')
-                .style("font-weight","bold")
-                .attr("class","ms-number-title")
-                .text("$2,541");
-
-                g.append("text")
-                .attr("x", -120)
-                .attr("y", -30)
-                .style("font-size","15px")
-                .style("font-family",'"Montserrat",sans-serif')
-                .style("font-weight","bold")
-                .attr("class","ms-number-description")
-                .text('MONTHLY "SURVIVAL" BUDGET');
-
-            });
-
-            $("#chart_person").addClass("animated rotateIn");
-
-            </script>
-
-            <div id="budget-person-numbers">
-                <p class="pHousing-text"><span class="pHousing-budget-person-numbers-title">Housing:</span> $1,167</p>
-                <p class="pHealth-text"><span class="pHealth-budget-person-numbers-title">Health Care:</span> $199</p>
-                <p class="pFood-text"><span class="pFood-budget-person-numbers-title">Food:</span> $169</p>
-                <p class="pMisc-text"><span class="pMisc-budget-person-numbers-title">Miscellaneous:</span> $231</p>
-                <p class="pTrans-text"><span class="pTrans-budget-person-numbers-title">Transportation:</span> $225</p>
-                <p class="pTaxes-text"><span class="pTaxes-budget-person-numbers-title">Taxes:</span> $550</p>
-
-                <img class="buget-bar" src="icons/person-poverty-line.png" />
-            </div>
-
-        </div>
-
-        <div class="budget-family-container">
-            <div id="budget_family">
-                <h2 class="ms-chartTitle" style="margin-left: 5%">Virginia Single Adult</h2>
-            </div>
-
-             <script>
-            var fwidth = 550,
-                fheight = 500,
-                fradius = Math.min(fwidth, fheight) / 2;
-
-                var fimage_width = 40,
-                    fimage_height = 40;
-
-            var fcolor = d3.scaleOrdinal()
-                        .range(["#772057","#e1749e","#f2682a","#c9177d","#881c55","#f79b8b","#772057"]);
-
-            var farc = d3.arc()
-                    .outerRadius(radius - 10)
-                    .innerRadius(radius- 110);
-
-            var fpie = d3.pie()
-                        .sort(null)
-                        .value(function(d){return d.Money; });
-
-            var fsvg = d3.select("#budget_family").append("svg")
-                        .attr("width", fwidth)
-                        .attr("height", fheight)
-                        .attr("id","chart_family")
-                        .append("g")
-                        .attr("transform","translate(300,250)");
-
-            d3.csv("data/familyData.csv", function(error,fdata){
-                if (error) throw error;
-
-                var fg = fsvg.selectAll(".arc")
-                    .data(fpie(fdata))
-                    .enter().append("g")
-                    .attr("class", function(d){return "f" + d.data.Name; });
-
-                fg.append("path")
-                    .attr("d", farc)
-                    .style("fill", function(d){return color(d.data.Name); });
-
-                fg.append("g")
-                    .attr("transform", function(d){return "translate(" + arc.centroid(d) + ")"; })
-                    .append("svg:image")
-                        .attr("xlink:href", function(d){return d.data.Image; })
-                        .attr("width", fimage_width)
-                        .attr("height", fimage_height)
-                        .attr("x", -1*fimage_width/2)
-                        .attr("y", -1*fimage_height/2);
-
-                fg.append("svg:image")
-                    .attr("x", -95)
-                    .attr("y", -50)
-                    .attr("width", 190)
-                    .attr("height", 190)
-                    .attr("xlink:href","icons/ms_family.png");
-
-                fg.append("text")
-                .attr("x", -82)
-                .attr("y", -65)
-                .style("font-size","50px")
-                .style("fill","#f2672a")
-                .style("font-family",'"Montserrat",sans-serif')
-                .style("font-weight","bold")
-                .attr("class","ms-number-title")
-                .text("$7,314");
-
-                fg.append("text")
-                .attr("x", -120)
-                .attr("y", -30)
-                .style("font-size","15px")
-                .style("font-family",'"Montserrat",sans-serif')
-                .style("font-weight","bold")
-                .attr("class","ms-number-description")
-                .text('MONTHLY "SURVIVAL" BUDGET');
-
-            });
-
-            $("#chart_family").addClass("animated rotateIn");
-
-            </script>
-
-            <div id="budget-family-numbers">
-                <p class="fHousing-text"><span class="fHousing-budget-family-numbers-title">Housing:</span> $1,458</p>
-                <p class="fHealthcare-text"><span class="fHealthcare-budget-family-numbers-title">Health Care:</span> $767</p>
-                <p class="fFood-text"><span class="fFood-budget-family-numbers-title">Food:</span> $561</p>
-                <p class="fMisc-text"><span class="fMisc-budget-family-numbers-title">Miscellaneous:</span> $665</p>
-                <p class="fTrans-text"><span class="fTrans-budget-family-numbers-title">Transportation:</span> $416</p>
-                <p class="fTaxes-text"><span class="fTaxes-budget-family-numbers-title">Taxes:</span> $1,263</p>
-                <p class="fChildcare-text"><span class="fChildcare-budget-family-numbers-title">Child Care:</span> $2,184</p>
-
-                <img class="buget-bar" src="icons/family-poverty-line.png" />
-            </div>
-        </div>
-      </div>
-
-    <!-- ALICE Survival -->
 
     <!-- Monthly Chocies starts here -->
     <div id="Issue01-monthlyChoices">
