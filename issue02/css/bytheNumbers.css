@@ -1,5 +1,5 @@
 #Issue01-bytheNumbers {
-    height: 430px;
+    height: 1250px;
     width: 1112px;
     margin-top: 40px;
     background-color: #fff;
@@ -63,28 +63,154 @@
     text-align: center;
 }
 
-.numbers-food-insecurity{
+/* People */
+
+.numbers-transfer-people{
     width: 30%;
-    visibility: hidden;
+/*    visibility: hidden;*/
     float: left;
 }
 
-.numbers-food-insecurity img{
-    width: 300px;
+.numbers-transfer-people img{
+    width: 198px;
     margin-left: 8%;
+    margin-bottom: 20px;
 }
 
-.numbers-food-insecurity p {
+.numbers-transfer-people p {
+    font-size: 20px;
+    padding-right: 40px;
+    text-align: center;
+    font-family: "roboto", sans-serif;
+}
+
+
+/* Hats */
+
+.numbers-transfer-hats{
+    width: 30%;
+/*    visibility: hidden;*/
+    float: left;
+    margin-top: 10px;
+}
+
+.numbers-transfer-hats img{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.numbers-transfer-hats p {
+    font-size: 20px;
+    text-align: center;
+    font-family: "roboto", sans-serif;
+    padding-right: 40px;
+}
+
+/* Pie Chart */
+
+.numbers-transfer-pie{
+    width: 30%;
+/*    visibility: hidden;*/
+    float: left;
+    margin-top: 10px;
+}
+
+.numbers-transfer-pie img{
+    width: 130px;
+    margin-left: 80px;
+    /*margin-bottom: 20px;*/
+}
+
+.numbers-transfer-pie p {
+    padding-top: 3px;
     font-size: 20px;
     text-align: center;
     font-family: "roboto", sans-serif;
 }
 
-.numbers-food-data{
-    color: #762056;
+/* Piggy */
+
+.numbers-transfer-piggy{
+/*    visibility: hidden;*/
+    float: left;
+    margin-top: 20px;
+}
+
+.numbers-transfer-piggy img{
+    width: 250px;
+    margin-left: 80px;
+    /*margin-bottom: 20px;*/
+}
+
+.numbers-transfer-piggy p {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 60px;
+    font-family: "roboto", sans-serif;
+}
+
+/* Roll */
+
+.numbers-transfer-roll{
+    width: 40%;
+/*    visibility: hidden;*/
+    float: left;
+    margin-top: 10px;
+}
+
+.numbers-transfer-roll img{
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 13%;
+    margin-bottom: 20px;
+}
+
+.numbers-transfer-roll p {
+    padding-top: 10px;
+    font-size: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-family: "roboto", sans-serif;
+}
+
+/* Certificate */
+
+.numbers-transfer-certificate{
+    width: 50%;
+/*    visibility: hidden;*/
+    float: left;
+    margin-top: 10px;
+}
+
+.numbers-transfer-certificate img{
+    width: 180px;
+    margin-left: 27%;
+    margin-bottom: 20px;
+}
+
+.numbers-transfer-certificate p {
+    padding-top: 3px;
+    font-size: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-family: "roboto", sans-serif;
+}
+
+.numbers-transfer-year {
+    color: #006938;
     font-family: "Montserrat", sans-serif;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.numbers-transfer-data{
+    color: #006938;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
     text-transform: uppercase;
     margin-bottom: 0px;
 }
